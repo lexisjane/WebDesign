@@ -1,0 +1,12 @@
+.bird {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.bird img {
+	width: 350px;
+	max-width: 100%;
+	height: auto;
+}
