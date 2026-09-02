@@ -1,5 +1,5 @@
 h1 {
-    color: midnightblue;
+    color: rgb(164, 86, 2);
     text-align: center;
     font-size: 70px;
     border-style: solid;
@@ -7,7 +7,7 @@ h1 {
  }
 
  h2 {
-    color: midnightblue;
+    color: rgba(0, 0, 0, 0.7);
     text-align: center;
     font-size: 30px;
  }
@@ -16,10 +16,11 @@ h1 {
     text-align: center;
     font-size: 18px;
     margin: 60px;
+    color: rgba(0, 0, 0, 0.7);
  }
 
  body {
-    background-color: powderblue;
+    background-color: rgb(227, 194, 149);
     text-align: center;
  }
 
@@ -35,8 +36,10 @@ h1 {
  figcaption {
     font-weight: bold;
     font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
  }
 
  p {
     margin-bottom: 75px;
+    color: rgba(0, 0, 0, 0.7);
  }
