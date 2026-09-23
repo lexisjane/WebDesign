@@ -2,7 +2,15 @@ h1 {
     font-size: 70px;
     margin-bottom: 5px;
     font-family: Georgia, serif;
+    text-shadow: 1px 1px 2px black;
  }
+
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
  h2 {
     font-size: 30px;
@@ -23,6 +31,45 @@ h1 {
     margin-bottom: 75px;
     margin-top: 80px;
  }
+
+/*------------------------------------------table creation--------------------------------------------*/
+
+.table-info h2 {
+   margin-left: 26%;
+   text-align: left;
+   color: #c6774d;
+   font-family: Helvetica, sans-serif
+}
+
+.table-info table {
+  position: relative;
+  left: 15px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.table-info th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  font-family: Helvetica, sans-serif
+}
+
+.table-info th {
+  background-color: #fdfdfd;
+  font-weight: bold;
+  color: #df9968;
+}
+
+.table-info td {
+   color: #252525;
+   opacity: 0.7;
+}
 
 /* ------------------------------STYLE HEADER---------------------------------------- */
 
@@ -53,12 +100,109 @@ header {
     font-family: Helvetica, sans-serif;
  }
 
- hr {
+  hr {
     border: 0;
     height: 3px;
     background: #f6e8e3;
     width: 59%;
     margin: 50px auto;
+  }
+/*---------------------------------------------------------create gallery------------------------------------*/
+ .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: min(90%, 1000px);
+    margin: 0 auto 75px;
+ }
+
+ .gallery-item {
+    margin: 0;
+ }
+
+ .gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+ }
+
+.gallery-item img.deer3 {
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+   object-position: bottom;
+}
+
+.gallery-title h1 {
+   font-family: "Oi", serif;
+}
+
+/*---------------------------------Form input rules-----------------------------------------*/
+
+.form-v2 {
+  background-color: #fff6f6;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 30%;
+  margin: 0 auto;
+  font-family: Helvetica, san-serif;
+}
+
+.form-v2 fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form-v2 legend {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #e97a35;
+
+}
+
+.form-v2 label {
+  display: block; 
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: left;
+  color: #252525;
+  opacity: .7;
+}
+
+.form-v2 label:has(input[type="radio"]) {
+   font-weight: normal;
+}
+
+.form-v2 input[type="text"],
+.form-v2 input[type="email"],
+.form-v2 select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        font-size: 1rem;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+.form-v2 button {
+  margin-top: 20px;
+  background-color: #f78843;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 20px 0 0;
+}
+
+.form-v2 button:hover {
+  background-color: #f0b575;
 }
 
 /* ------------------------------STYLE NAV AND LINKS---------------------------------------- */

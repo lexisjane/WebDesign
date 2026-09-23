@@ -15,6 +15,7 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./info.html">Info</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
     </ul>
   </nav>
   <h2>Looking for More?</h2>
@@ -38,6 +39,46 @@
     </p>
     </div>
   </div>
+
+<!------------------------------------form--------------------------------------------->
+
+<form class="form-v2">
+  <fieldset>
+    <legend>Want to learn more about birds?</legend>
+
+    <br><label>Your Name:</label>
+    <input type="text" name="name" placeholder="e.g. John Smith">
+
+    <label>Email Adress:</label>
+    <input type="text" name="email" placeholder="e.g. JohnSmith@example.com">
+
+    <label>What information would you like to see this cite feature?</label>
+    <input type="text" name="favorite-bird" placeholder="Type Here">
+
+    <label>Favorite bird featured so far:</label> <!----drop down--->
+    <select name="Bird">
+    <option value="Killdeer">Killdeer</option>
+    <option value="Harlequin Duck">Harlequin Duck</option>
+    <option value="Sandhill Crane">Sandhill Crane</option>
+    </select>
+
+   <label>Do you like birds?</label> <!--radio selection--->
+   <label><input type="radio" name="format" value="print"> Yes! Love them!</label>
+   <label><input type="radio" name="format" value="audio"> Nope</label>
+   <label><input type="radio" name="format" value="live"> As much as the average person</label>
+
+
+   <label>
+   <input type="checkbox" name="subscribe" value="yes">
+    Check here to be a part of our monthly newsletter.
+   </label>
+
+
+    <button type="submit">Submit</button>
+</fieldset>
+</form>
+
+<!----------------------------------------------footer-------------------------------------------->
     
 <footer>
   <p>&copy; 2026 Alexis Autrey. All rights reserved.</p>

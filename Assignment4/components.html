@@ -3,17 +3,158 @@
 
 <html lang="en">
 
-    <head>      
+    <head>    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/styles.css">
         <meta charset="UTF-8">
         <title>Birds of Montana</title>
     </head>  
-    
+
 <!--------------------------------end html structure----------------------------------->
 <!--------------------------------begin page content----------------------------------->
 
 <body>
 
+<!------------------------------------table-------------------------------------------->
+<hr>
+
+<div class="table-info">
+
+<h2>Killdeer</h2> <!------killdeer----->
+
+<table>
+    <tr>
+      <th>Scientific Name</th>
+      <th>Habitat</th>
+      <th>Time of Year in Montana</th>
+    </tr>
+  <tbody>
+    <tr>
+      <td>Charadrius vociferus</td>
+      <td>Flat open ground</td>
+      <td>March - September</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Sandhill Crane</h2> <!------Sandhill Crane----->
+
+<table>
+    <tr>
+      <th>Scientific Name</th>
+      <th>Habitat</th>
+      <th>Time of Year in Montana</th>
+    </tr>
+  <tbody>
+    <tr>
+      <td>Antigone canadensis</td>
+      <td>Wetlands & open lands</td>
+      <td>March - October</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Harlequin Duck</h2> <!------Harlequin Duck---->
+
+<table>
+    <tr>
+      <th>Scientific Name</th>
+      <th>Habitat</th>
+      <th>Time of Year in Montana</th>
+    </tr>
+  <tbody>
+    <tr>
+      <td>Histrionicus histrionicus</td>
+      <td>Fast moving water</td>
+      <td>April - September</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<hr>
+<!-----------------------------------end table----------------------------------------->
+<!------------------------------------form--------------------------------------------->
+
+<form class="form-v2">
+  <fieldset>
+    <legend>Want to learn more about birds?</legend>
+
+    <br><label>Your Name:</label>
+    <input type="text" name="name" placeholder="e.g. John Smith">
+
+    <label>Email Adress:</label>
+    <input type="text" name="email" placeholder="e.g. JohnSmith@example.com">
+
+    <label>What information would you like to see this cite feature?</label>
+    <input type="text" name="favorite-bird" placeholder="Type Here">
+
+    <label>Favorite bird featured so far:</label> <!----drop down--->
+    <select name="Bird">
+    <option value="Killdeer">Killdeer</option>
+    <option value="Harlequin Duck">Harlequin Duck</option>
+    <option value="Sandhill Crane">Sandhill Crane</option>
+    </select>
+
+   <label>Do you like birds?</label> <!--radio selection--->
+   <label><input type="radio" name="format" value="print"> Yes! Love them!</label>
+   <label><input type="radio" name="format" value="audio"> Nope</label>
+   <label><input type="radio" name="format" value="live"> As much as the average person</label>
+
+
+   <label>
+   <input type="checkbox" name="subscribe" value="yes">
+    Check here to be a part of our monthly newsletter.
+   </label>
+
+
+    <button type="submit">Submit</button>
+</fieldset>
+</form>
+
+<!------------------------------------end form----------------------------------------->
+<!--------------------------------create gallery--------------------------------------->
+
+<div class="gallery-title">
+  <h1>Gallery</h1>
+</div>
+
+    <div class="gallery">
+
+
+        <figure class="gallery-item">
+                <img src="images/duck1.jpg.webp" alt="Duck">
+        </figure>
+        <figure class="gallery-item">
+                <img src="images/duck2.jpg.webp" alt="Duck">
+        </figure>
+        <figure class="gallery-item">
+                <img src="images/sandhill2.jpg" alt="Crane">
+        </figure>
+        <figure class="gallery-item">
+                <img src="images/duck3.jpeg" alt="Duck">
+        </figure>
+        <figure class="gallery-item">    
+                <img src="images/deer1.png.webp" alt="Killdeer">
+        </figure>
+        <figure class="gallery-item">                
+                <img src="images/sandhill1.jpg" alt="Crane">
+        </figure>
+        <figure class="gallery-item">           
+                <img src="images/sandhill3.jpg.webp" alt="Crane">
+        </figure>
+        <figure class="gallery-item">
+                <img src="images/deer2.jpg.webp" alt="Killdeer">
+        </figure>
+        <figure class="gallery-item">
+          <img class="deer3" src="images/deer3.jpeg" alt="Killdeer">
+        </figure>
+    </div>
+
+<!-----------------------------------end gallery-------------------------------------->
 <!---------------------------------navigation----------------------------------------->
 
 <nav>
@@ -21,6 +162,7 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./info.html">Info</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
     </ul>
 </nav>
 
