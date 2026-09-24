@@ -8,8 +8,9 @@ Montana is home to over 400 different bird species. In this web page you will fi
 - Which icons did you ultimately use and for what purposes? 
     - I used all 6 icons next to headers to help contextualize captions.
 - Which consistent colors, values, lines, and/or shapes did you utilize and why? 
-        I stayed consistant with a monochromatic salmon but contrasted with whites.
-- Which Google Fonts did you use and for what purposes? I used DM Serif Display as a header font and Nunito as a secondary paragraph font because it is easier to read in large chunks.
+    - I stayed consistant with a monochromatic salmon but contrasted with whites.
+- Which Google Fonts did you use and for what purposes? 
+    - I used DM Serif Display as a header font and Nunito as a secondary paragraph font because it is easier to read in large chunks.
 
 ### Structure and Organization
 - What information does your table organize, and why was a table appropriate?
