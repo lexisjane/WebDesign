@@ -1,16 +1,8 @@
 h1 {
-    font-size: 70px;
+    font-size: 80px;
     margin-bottom: 5px;
-    font-family: Georgia, serif;
-    text-shadow: 1px 1px 2px black;
+    font-family: "DM Serif Display", serif;
  }
-
-.oi-regular {
-  font-family: "Oi", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
  h2 {
     font-size: 30px;
@@ -26,44 +18,82 @@ h1 {
     margin: 0 auto;
     color: #252525;
     opacity: 0.7;
-    font-family: Helvetica, sans-serif;
+    font-family: "Nunito", sans-serif;
     line-height: 30px;
     margin-bottom: 75px;
     margin-top: 80px;
  }
+/*-------------------------------------------fonts----------------------------------------------------*/
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.nunito-font {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
 
 /*------------------------------------------table creation--------------------------------------------*/
 
 .table-info h2 {
-   margin-left: 26%;
-   text-align: left;
+   margin: 0 0 16px;
+   text-align: center;
    color: #c6774d;
-   font-family: Helvetica, sans-serif
+   font-family: "Nunito", sans-serif;
+}
+
+.table-info {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+   gap: 50px;
+   width: 95%;
+   margin: 0 auto;
+}
+
+.table-card {
+   min-width: 0;
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   background-color: #f6e8e3;
+   border: 3px dotted #ca9172;
+   border-radius: 20px;
 }
 
 .table-info table {
-  position: relative;
-  left: 15px;
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  width: 100%;
+  min-height: 100px;
+  table-layout: fixed;
+  margin: 0;
   background-color: #fdfdfd;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: none;
 }
 
 .table-info th, td {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  text-align: left;
-  font-family: Helvetica, sans-serif
+  text-align: center;
+   font-family: "Nunito", sans-serif;
 }
 
 .table-info th {
-  background-color: #fdfdfd;
+  background-color: #e9e8e8;
   font-weight: bold;
-  color: #df9968;
+  color: #252525;
+  opacity: .7;
 }
 
 .table-info td {
@@ -75,13 +105,14 @@ h1 {
 
 header {
    text-align: center;
-   font-family: Helvetica, sans-serif;
+   font-family: "Nunito", sans-serif;
    color: #f6e8e3;
 }
 
  body {
     background-color: #f9d0bc;
     text-align: center;
+    margin: 0;
  }
 
  figcaption {
@@ -97,7 +128,7 @@ header {
     color: #252525;
     opacity: 0.7;
     font-size: 18px;
-    font-family: Helvetica, sans-serif;
+   font-family: "Nunito", sans-serif;
  }
 
   hr {
@@ -109,14 +140,16 @@ header {
   }
 /*---------------------------------------------------------create gallery------------------------------------*/
  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     width: min(90%, 1000px);
     margin: 0 auto 75px;
  }
 
  .gallery-item {
+    flex: 1 1 calc((100% - 48px) / 3);
+    min-width: 0;
     margin: 0;
  }
 
@@ -147,7 +180,7 @@ header {
   border: 1px solid #ccc;
   width: 30%;
   margin: 0 auto;
-  font-family: Helvetica, san-serif;
+   font-family: "Nunito", sans-serif;
 }
 
 .form-v2 fieldset {
@@ -220,7 +253,7 @@ nav a {
 li {
   list-style-type: none;
   display: inline-block;
-  font-family: Helvetica, sans-serif;
+   font-family: "Nunito", sans-serif;
   margin-right: 100px;
 }
 
@@ -271,6 +304,13 @@ footer p {
    transition: transform 0.3s ease;
 }
 
+.bird-links img.link-icon {
+   width: 20px;
+   height: 20px;
+   object-fit: contain;
+   margin-top: 8px;
+}
+
 .bird-links a:hover img {
    transform: scale(1.08);
 }
@@ -279,12 +319,12 @@ footer p {
    margin-top: 50px;
    font-size: 70px;   
    color: #f6e8e3;
-   font-family: Georgia, serif;
+   font-family: "DM Serif Display", serif;
    margin-bottom: 75px;
    background-color: #c47a5f;
    padding-top: 100px;
    padding-bottom: 100px;
-   border: 5px dotted #feac80;
+   border: 3px dotted #feac80;
 }
 
 .mainContent img,
@@ -294,8 +334,7 @@ footer p {
     width: 400px;
     height: 315px;
     max-width: 100%;
-    border-radius: 50%;
-    border: 3px solid #c6774d;
+    border-radius: 10%;
  }
 
  .subContent img {
@@ -304,8 +343,8 @@ footer p {
     width: 400px;
     height: 315px;
     max-width: 100%;
-    border-radius: 50%;
-    border: 3px solid #c1823e;
+    border-radius: 10%;
+
  }
 
  .subHero hr {
@@ -355,6 +394,10 @@ footer p {
 }
 
 .hero blockquote {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 6px;
  text-align: center;
  max-width: 100%;
  margin: 0;
@@ -374,6 +417,22 @@ footer p {
  margin-bottom: 50px;
 }
 
+.cardGroup h2 {
+   color: #c6774d;
+   font-size: 50px;
+   margin-bottom: 100px;
+   margin-top:100px;
+   font-family: "DM Serif Display", serif;
+}
+
+#table-title h2 {
+   color: #c6774d;
+   font-size: 50px;
+   margin-bottom: 100px;
+   margin-top:200px;
+}
+
+/*------------------------------------------bird cards ------------------------------*/
 
 .birdCard {
  display: inline-block;
@@ -384,13 +443,20 @@ footer p {
  padding: 10px;
  padding-bottom: 20px;
  margin: 1%;
- border: 5px dotted #ca9172;
+ border: 3px dotted #ca9172;
+}
+
+.birdCard p {
+ font-size: 18px;
+ line-height: 24px;
 }
 
 .cardGroup {
- font-family: Georgia, serif;
+ font-family: "Nunito", sans-serif;
  text-align: center;
 }
+
+/*--------------------------------------style quote-------------------------------------*/
 
 .quote hr {
    width: 1%;
@@ -399,15 +465,88 @@ footer p {
    background-color:rgb(237, 131, 86);
 }
 
+/*--------------------------------HERO STYLE--------------------------------------*/
+
 .hero hr {
    margin-bottom: 10px;
 }
 
-/*--------------------------------HERO STYLE--------------------------------------*/
 .hero {
    position: relative;
 }
 
 .hero header {
    text-align: center;
+}
+
+/*---------------------------------icon style---------------------------------------*/
+
+.subContent img.link-icon {
+   height: 20px;
+   width: 20px;
+   vertical-align: middle;
+   margin: 0 6px 0 0;
+}
+
+.quote img.speak-icon {
+   height: 20px;
+   width: 20px;
+   border: none;
+   flex: 0 0 auto;
+   margin: 0;
+}
+
+.cardGroup img.love-icon {
+   display: inline-block;
+   height: 30px;
+   width: 30px;
+   vertical-align: middle;
+   border: none;
+   flex: 0 0 auto;
+   margin: 0;
+   padding-right: 10px;
+   padding-bottom: 3px;
+}
+
+#table-title img.fast-icon {
+   height: 30px;
+   width: 30px;
+   border: none;
+   flex: 0 0 auto;
+   margin: 0;
+   padding-right: 10px;
+   padding-bottom: 3px;
+}
+
+.subContent img.think-icon {
+   display: inline-block;
+   height: 25px;
+   width: 20px;
+   vertical-align: middle;
+   margin: 0 6px 0 0;
+}
+
+.birdCard img.think-icon {
+   display: inline-block;
+   height: 25px;
+   width: 20px;
+   vertical-align: middle;
+   margin: 0 6px 0 0;
+}
+
+.table-card img.fast-icon{
+   height: 30px;
+   width: 30px;
+   border: none;
+   flex: 0 0 auto;
+   margin: 0;
+   padding-right: 10px;
+}
+
+img.bird-icon {
+   height: 50px;
+   width: 40px;
+   vertical-align: middle;
+   margin: 0 6px 0 0;
+   padding-bottom: 50px;
 }

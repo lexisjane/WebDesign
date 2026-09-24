@@ -3,7 +3,13 @@
 
 <html lang="en">
 
-    <head>      
+    <head>  
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!------top font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-------secondary font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">   
         <link rel="stylesheet" href="styles/styles.css">
         <meta charset="UTF-8">
         <title>Birds of Montana</title>
@@ -38,7 +44,8 @@
     <div class="quote">
     <hr>
     <blockquote>
-    The bluebird carries the sky on his back.
+    <img class="speak-icon" src="images/icon2.png" alt="">
+    <span>The bluebird carries the sky on his back.</span>
     </blockquote>
     <cite>Henry David Thoreau</cite>
     <hr>
@@ -46,6 +53,7 @@
 </div>
 
 <!-----------------------------------main content------------------------------------->
+
 <h3><strong>Killdeer, Harlequin Ducks and Sandhill Cranes</strong> are <em>three</em> of my favorite birds in Montana because each one represents a different part of the state’s natural beauty.
     I love Killdeer because I find them to be an interesting and, quite frankly, a funny bird.
     Harlequin Ducks fascinate me because of their distinctive markings and coloration. Sandhill Cranes are another favorite of mine because of their impressive size, graceful movements, and the unique call they make which can be heard from miles away.
@@ -54,25 +62,29 @@
 
 <!----------------------------------images and captions---------------------------------->
 
+
 <div class="cardGroup">
+
+<h2><img class="love-icon" src="images/icon3.png" alt="">Featured Birds</h2>
+
 <div class="birdCard">
     <figure>
         <img src="images/Killdeer.jpeg" alt="Killdeer" />
-        <figcaption>Killdeer</figcaption>
+        <figcaption><img class="love-icon" src="images/icon3.png" alt="">Killdeer</figcaption>
     </figure>
-    <p>Killdeer lay their eggs in open areas and will often pretend to have a broken wing to distract predators from their eggs.</p>
+    <p>Killdeer lay their eggs in open areas and will pretend to have a broken wing to distract predators from their eggs.</p>
 </div>
 <div class="birdCard">
     <figure>
         <img src="images/HarlequinDuck.jpeg" alt="Harlequin Duck" />
-        <figcaption>Harlequin Duck</figcaption>
+        <figcaption><img class="love-icon" src="images/icon3.png" alt="">Harlequin Duck</figcaption>
     </figure>
     <p>You can find these birds along mountain streams anywhere between April and September.</p>
 </div>
 <div class="birdCard">
     <figure>
         <img src="images/SandhillCrane.jpg" alt="Sandhill Crane" />
-        <figcaption>Sandhill Crane</figcaption>
+        <figcaption><img class="love-icon" src="images/icon3.png" alt="">Sandhill Crane</figcaption>
     </figure>
     <p> These birds are an impressive size. They can range from 3 to 4 feet tall and have a wingspan of up to 7 feet.</p>
 </div>
@@ -80,9 +92,15 @@
 
 <!---------------------------------------------------table bird info------------------------>
 
+<div id="table-title">
+<h2><img class="fast-icon" src="images/icon6.png" alt="">Quick Facts</h2>
+</div>
+
 <div class="table-info">
 
-<h2>Killdeer</h2> <!------killdeer----->
+
+<div class="table-card">
+<h2><img class="fast-icon" src="images/icon6.png" alt="">Killdeer</h2> <!------killdeer----->
 
 <table>
     <tr>
@@ -98,25 +116,11 @@
     </tr>
   </tbody>
 </table>
+</div>
 
-<h2>Sandhill Crane</h2> <!------Sandhill Crane----->
 
-<table>
-    <tr>
-      <th>Scientific Name</th>
-      <th>Habitat</th>
-      <th>Time of Year in Montana</th>
-    </tr>
-  <tbody>
-    <tr>
-      <td>Antigone canadensis</td>
-      <td>Wetlands & open lands</td>
-      <td>March - October</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>Harlequin Duck</h2> <!------Harlequin Duck---->
+<div class="table-card">
+<h2><img class="fast-icon" src="images/icon6.png" alt="">Harlequin Duck</h2> <!------Harlequin Duck---->
 
 <table>
     <tr>
@@ -132,6 +136,28 @@
     </tr>
   </tbody>
 </table>
+</div>
+
+
+<div class="table-card">
+<h2><img class="fast-icon" src="images/icon6.png" alt="">Sandhill Crane</h2> <!------Sandhill Crane----->
+
+<table>
+    <tr>
+      <th>Scientific Name</th>
+      <th>Habitat</th>
+      <th>Time of Year in Montana</th>
+    </tr>
+  <tbody>
+    <tr>
+      <td>Antigone canadensis</td>
+      <td>Wetlands & open lands</td>
+      <td>March - October</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 </div>
 
