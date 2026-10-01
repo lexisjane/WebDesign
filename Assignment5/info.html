@@ -1,0 +1,100 @@
+<!-- -----------------------------html structure--------------------------------------->
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">     
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-------secondary font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="styles/styles.css">
+        <meta charset="UTF-8">
+        <title>Birds of Montana</title>
+    </head>  
+
+<div class="subHero">
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./info.html">Info</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <h2>Looking for More?</h2>
+</div>
+
+
+  <body>
+
+  <div class="subContent">
+    <div class="infoPage">
+    
+    <p><img class="link-icon" src="images/Icon5.png" alt="">There are <strong>tons</strong> of websites to find additional information about these birds! Here you will find access to just a few of the many.
+      Check out the following resources to learn more:
+      <ul class="bird-links">
+        <li><a href="https://www.allaboutbirds.org/guide/Killdeer/overview">
+          <img src="images/Killdeer.jpeg" alt="Info on Killdeer" /><br>
+          <img class="link-icon" src="images/Icon5.png" alt="Visit Killdeer link" /></a></li>        
+        <li><a href="https://www.allaboutbirds.org/guide/Harlequin_Duck/overview">
+          <img src="images/HarlequinDuck.jpeg" alt="Info on Harlequin Ducks" /><br>
+          <img class="link-icon" src="images/Icon5.png" alt="Visit Harlequin Duck link" /></a></li>
+        <li><a href="https://www.allaboutbirds.org/guide/Sandhill_Crane/overview">
+          <img src="images/SandhillCrane.jpg" alt="Info on Sandhill Cranes" /><br>
+          <img class="link-icon" src="images/Icon5.png" alt="Visit Sandhill Crane link" /></a></li>
+      </ul>
+    </p>
+    </div>
+  </div>
+
+<!------------------------------------form--------------------------------------------->
+
+<form class="form-v2">
+  <fieldset>
+    <legend>Want to learn more about birds?</legend>
+
+    <br><label>Your Name:</label>
+    <input type="text" name="name" placeholder="e.g. John Smith">
+
+    <label>Email Adress:</label>
+    <input type="text" name="email" placeholder="e.g. JohnSmith@example.com">
+
+    <label>What information would you like to see this cite feature?</label>
+    <input type="text" name="favorite-bird" placeholder="Type Here">
+
+    <label>Favorite bird featured so far:</label> <!----drop down--->
+    <select name="Bird">
+    <option value="Killdeer">Killdeer</option>
+    <option value="Harlequin Duck">Harlequin Duck</option>
+    <option value="Sandhill Crane">Sandhill Crane</option>
+    </select>
+
+   <label>Do you like birds?</label> <!--radio selection--->
+   <label><input type="radio" name="format" value="print"> Yes! Love them!</label>
+   <label><input type="radio" name="format" value="audio"> Nope</label>
+   <label><input type="radio" name="format" value="live"> As much as the average person</label>
+
+
+   <label>
+   <input type="checkbox" name="subscribe" value="yes">
+    Check here to be a part of our monthly newsletter.
+   </label>
+
+
+    <button type="submit">Submit</button>
+</fieldset>
+</form>
+
+
+<!----------------------------------------------footer-------------------------------------------->
+    
+<footer>
+  <p>&copy; 2026 Alexis Autrey. All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>
