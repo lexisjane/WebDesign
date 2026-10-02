@@ -238,7 +238,7 @@ header {
   background-color: #f0b575;
 }
 
-/* ------------------------------STYLE NAV AND LINKS---------------------------------------- */
+/* ------------------------------STYLE NAV AND LINKS AND LOGO---------------------------------------- */
 
 nav {
    margin-top: 50px;
@@ -259,6 +259,11 @@ li {
 
 .subHero nav {
    padding-bottom: 0;
+}
+
+.logo img {
+   width: 200px;
+   height: 200 px;
 }
 
 /*------------------------------STYLE FOOTER-----------------------------------------------*/
