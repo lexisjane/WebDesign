@@ -1,11 +1,11 @@
 h1 {
-    font-size: 80px;
+    font-size: 90px;
     margin-bottom: 5px;
-    font-family: "DM Serif Display", serif;
+    font-family: "Chango", san-serif;
  }
 
  h2 {
-    font-size: 30px;
+    font-size: 38px;
     margin-bottom: 10px;
     margin-top: 0px;
  }
@@ -45,12 +45,18 @@ h1 {
   font-style: normal;
 }
 
+.chango-regular {
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*------------------------------------------table creation--------------------------------------------*/
 
 .table-info h2 {
    margin: 0 0 16px;
    text-align: center;
-   color: #c6774d;
+   color: #3f456b;
    font-family: "Nunito", sans-serif;
 }
 
@@ -67,8 +73,8 @@ h1 {
    display: flex;
    flex-direction: column;
    padding: 20px;
-   background-color: #f6e8e3;
-   border: 3px dotted #ca9172;
+   background-color: #d7d5fa;
+   border: 1px solid #ccc;
    border-radius: 20px;
 }
 
@@ -77,7 +83,7 @@ h1 {
   min-height: 100px;
   table-layout: fixed;
   margin: 0;
-  background-color: #fdfdfd;
+  background-color: #f4ebf5;
   border: none;
 }
 
@@ -90,7 +96,7 @@ h1 {
 }
 
 .table-info th {
-  background-color: #e9e8e8;
+  background-color: #dddbd8;
   font-weight: bold;
   color: #252525;
   opacity: .7;
@@ -106,11 +112,13 @@ h1 {
 header {
    text-align: center;
    font-family: "Nunito", sans-serif;
-   color: #f6e8e3;
+  /* color: #f4ebf5; */
+   color: #3f456b;
+
 }
 
  body {
-    background-color: #f9d0bc;
+    background-color: #f4ebf5;
     text-align: center;
     margin: 0;
  }
@@ -118,7 +126,8 @@ header {
  figcaption {
     font-weight: bold;
     font-size: 30px;
-    color: #c6774d;
+    color: #3f456b;
+    font-family: "Nunito", sans-serif;
   
  }
 
@@ -130,14 +139,17 @@ header {
     font-size: 18px;
    font-family: "Nunito", sans-serif;
  }
-
+/*
   hr {
     border: 0;
     height: 3px;
-    background: #f6e8e3;
+    background: #f4ebf5;
     width: 59%;
     margin: 50px auto;
   }
+   
+
+   
 /*---------------------------------------------------------create gallery------------------------------------*/
  .gallery {
     display: flex;
@@ -160,9 +172,18 @@ header {
     border-radius: 12px;
  }
 
+ /*
 .gallery-item img.deer3 {
    width: 100%;
    height: 400px;
+   object-fit: cover;
+   object-position: bottom;
+}
+*/
+
+
+.gallery-item img.deer3 {
+   aspect-ratio: 4/5;
    object-fit: cover;
    object-position: bottom;
 }
@@ -174,7 +195,7 @@ header {
 /*---------------------------------Form input rules-----------------------------------------*/
 
 .form-v2 {
-  background-color: #fff6f6;
+  background-color: #d7d5fa;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #ccc;
@@ -192,7 +213,7 @@ header {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #e97a35;
+  color: #3f456b;
 
 }
 
@@ -223,7 +244,7 @@ header {
 
 .form-v2 button {
   margin-top: 20px;
-  background-color: #f78843;
+  background-color: #ed9c77;
   color: white;
   padding: 10px 20px;
   font-size: 1rem;
@@ -235,26 +256,26 @@ header {
 }
 
 .form-v2 button:hover {
-  background-color: #f0b575;
+  background-color: #f6c382;
 }
 
 /* ------------------------------STYLE NAV AND LINKS AND LOGO---------------------------------------- */
 
 nav {
-   margin-top: 50px;
+
    font-size: 18px;
    padding-bottom: 2%;
 }
 
 nav a {
-   color: #c6774d;
+   color: #3f456b;
 }
 
 li {
   list-style-type: none;
   display: inline-block;
-   font-family: "Nunito", sans-serif;
-  margin-right: 100px;
+  font-family: "Nunito", sans-serif;
+ 
 }
 
 .subHero nav {
@@ -269,13 +290,13 @@ li {
 /*------------------------------STYLE FOOTER-----------------------------------------------*/
 
 footer {
-   background-color: #c47a5f;
+   background-color: #3f456b;
    padding: 20px;
    margin-top: 75px;
 }
 
 footer p {
-   color: #f6e8d0;
+   color: #f4ebf5;
    font-size: 14px;
    margin: 0;
 }
@@ -298,9 +319,6 @@ footer p {
    font-size: 22px;
 }
 
-.bird-links li a {
-   color: #c6774d;
-}
 /*-------------------------------------------control bird links when cursor hovers--------------------------------*/
 .bird-links img {
    width: 250px;
@@ -320,16 +338,30 @@ footer p {
    transform: scale(1.08);
 }
 
+/*-------------------------------------------subHero style------------------------------------*/
+
+.subHero .navBar img {
+   margin-left: 100px;
+}
+
+.subHero .navBar nav ul {
+   display: flex;
+   gap: 50px;
+   margin-left: -40px;
+   margin-bottom: 22px;
+   font-weight: bold;
+}
+
 .subHero h2 {
-   margin-top: 50px;
+   margin-top: -50px;
    font-size: 70px;   
-   color: #f6e8e3;
-   font-family: "DM Serif Display", serif;
+   color: #3f456b;
+   font-family: "Chango", san-serif;
    margin-bottom: 75px;
-   background-color: #c47a5f;
+   background-color: #f6c382;
    padding-top: 100px;
    padding-bottom: 100px;
-   border: 3px dotted #feac80;
+   border: 3px dotted #f6c382;
 }
 
 .mainContent img,
@@ -352,27 +384,25 @@ footer p {
 
  }
 
- .subHero hr {
-    background-color: #c6774d;
- }
-
 .infoPage img {
    display: inline-block;
 }
  /*---------------------------------------MAIN PAGE STYLE------------------------------*/
+ /*
 .hero-image {
    position: relative;
    width: 100%;
    height: 555px;
    overflow: hidden;
-   opacity: 75%;
+    opacity: 75%; 
 }
 
 .hero-image::after {
    content: "";
    position: absolute;
    inset: 0;
-   background-color: rgba(252, 122, 0, 0.475);
+   background-color: #ed9c77; 
+   opacity: .8; 
    pointer-events: none;
 }
 
@@ -395,46 +425,115 @@ footer p {
   margin: 0 auto;
   object-fit: cover;
   object-position: bottom;
-  border: 5px dotted #c6774d;
+  border: 5px dotted #f6c382;
+}
+*/
+
+/*---------------------------------------------Logo, nav and Hero header style------------------------------------*/
+
+.headBG {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   min-height: 650px;
+   overflow: hidden;
 }
 
-.hero blockquote {
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 6px;
- text-align: center;
- max-width: 100%;
- margin: 0;
- margin-top: 50px;
- margin-bottom: 10px;
- font-weight: bold;
- font-size: 30px;
- color: #c6774d;
- padding-top: 0%;
+.headBG > img {
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 115%;
+   object-fit: cover;
+   object-position: bottom;
 }
+
+.headBG .navBar,
+.headBG .hero-overlay {
+   position: relative;
+   z-index: 1;
+}
+
+.headBG .navBar {
+   z-index: 2;
+}
+
+.navBar {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 16px 5%;
+   margin: 10px;
+}
+
+.headBG .logo img {
+   display: block;
+   width: 200px;
+   height: auto;
+   margin-left: 100px;
+}
+
+.headBG nav {
+   margin: 0;
+   padding: 0;
+   margin-right: 100px;
+}
+
+.headBG nav ul {
+   display: flex;
+   gap: 50px;
+   margin: 0;
+   padding: 0;
+}
+
+.headBG nav li {
+   display: block;
+   margin: 0;
+   font-weight: bold;
+}
+
+.headBG .hero-overlay {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 24px;
+
+   transform: translateY(-250px);
+}
+
+.headBG .hero-overlay h2 {
+   width: 100%;
+   text-align: right;
+   margin-right: 360px;
+
+}
+
+/*---------------------------------------Component styles--------------------------------------*/
 
 .hero cite {
  display: block;
  text-align: center;
- color: #c6774d;
+ color: #3f456b;
  padding: 0;
  margin-bottom: 50px;
 }
 
 .cardGroup h2 {
-   color: #c6774d;
+   color: #ed9c77;
    font-size: 50px;
-   margin-bottom: 100px;
+   margin-bottom: 70px;
    margin-top:100px;
    font-family: "DM Serif Display", serif;
 }
 
 #table-title h2 {
-   color: #c6774d;
+   color: #ed9c77;
    font-size: 50px;
-   margin-bottom: 100px;
-   margin-top:200px;
+   margin-bottom: 70px;
+   margin-top:100px;
 }
 
 /*------------------------------------------bird cards ------------------------------*/
@@ -444,11 +543,11 @@ footer p {
  max-width: 28%;
  height: auto;
  border-radius: 30px;
- background-color: #f6e8e3;
+ background-color: #d7d5fa;
+ border: 1px solid #ccc;
  padding: 10px;
  padding-bottom: 20px;
  margin: 1%;
- border: 3px dotted #ca9172;
 }
 
 .birdCard p {
@@ -463,12 +562,33 @@ footer p {
 
 /*--------------------------------------style quote-------------------------------------*/
 
+.quote {
+   padding-top: 0;
+}
+
 .quote hr {
    width: 1%;
    margin: 10px auto;
    margin-top: 75px;
-   background-color:rgb(237, 131, 86);
+   background-color: #d7d5fa;
 }
+
+.hero blockquote {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 6px;
+ text-align: center;
+ max-width: 100%;
+ margin: 0;
+ margin-top: 50px;
+ margin-bottom: 10px;
+ font-weight: bold;
+ font-size: 30px;
+ color: #3f456b;
+ padding-top: 0%;
+}
+
 
 /*--------------------------------HERO STYLE--------------------------------------*/
 
@@ -479,6 +599,7 @@ footer p {
 .hero {
    position: relative;
 }
+
 
 .hero header {
    text-align: center;
@@ -554,4 +675,55 @@ img.bird-icon {
    vertical-align: middle;
    margin: 0 6px 0 0;
    padding-bottom: 50px;
+}
+
+/*------------------------------------------MEDIA QUERIES------------------------------------*/
+@media (max-width: 600px) {
+   .headBG .hero-overlay h1 {
+      font-size: 35px;
+   }
+   .headBG .hero-overlay h2 {
+      font-size: 19px;
+      text-align: center;
+      margin-right: 0;
+   }
+   .headBG .navBar .logo img {
+      width: 130px;
+      height: auto;
+      margin-left: 0;
+   }
+   .quote {
+      margin-top: -300px;
+   }
+   .headBG img {
+      height: 70%;
+      object-fit: cover;
+      object-position: bottom;
+   }
+   li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+   .subHero h2 {
+      font-size: 35px;
+      padding: 60px;
+   }
+   .subHero .navBar .logo img {
+     width: 130px;
+     height: auto;
+     margin-left: 0;
+   }
+   .form-v2 {
+      width: min(90%, 100%);
+      box-sizing: border-box;
+   }
+   .birdCard {
+      max-width: 90%;
+      margin: 20px auto;
+   }
+   .table-info {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
 }
