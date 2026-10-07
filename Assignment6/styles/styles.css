@@ -1,0 +1,729 @@
+h1 {
+    font-size: 90px;
+    margin-bottom: 5px;
+    font-family: "Chango", san-serif;
+ }
+
+ h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+ }
+
+ h3 {
+    width: 75%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 auto;
+    color: #252525;
+    opacity: 0.7;
+    font-family: "Nunito", sans-serif;
+    line-height: 30px;
+    margin-bottom: 75px;
+    margin-top: 80px;
+ }
+/*-------------------------------------------fonts----------------------------------------------------*/
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.nunito-font {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.chango-regular {
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*------------------------------------------table creation--------------------------------------------*/
+
+.table-info h2 {
+   margin: 0 0 16px;
+   text-align: center;
+   color: #3f456b;
+   font-family: "Nunito", sans-serif;
+}
+
+.table-info {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+   gap: 50px;
+   width: 95%;
+   margin: 0 auto;
+}
+
+.table-card {
+   min-width: 0;
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   background-color: #d7d5fa;
+   border: 1px solid #ccc;
+   border-radius: 20px;
+}
+
+.table-info table {
+  width: 100%;
+  min-height: 100px;
+  table-layout: fixed;
+  margin: 0;
+  background-color: #f4ebf5;
+  border: none;
+}
+
+.table-info th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+   font-family: "Nunito", sans-serif;
+}
+
+.table-info th {
+  background-color: #dddbd8;
+  font-weight: bold;
+  color: #252525;
+  opacity: .7;
+}
+
+.table-info td {
+   color: #252525;
+   opacity: 0.7;
+}
+
+/* ------------------------------STYLE HEADER---------------------------------------- */
+
+header {
+   text-align: center;
+   font-family: "Nunito", sans-serif;
+  /* color: #f4ebf5; */
+   color: #3f456b;
+
+}
+
+ body {
+    background-color: #f4ebf5;
+    text-align: center;
+    margin: 0;
+ }
+
+ figcaption {
+    font-weight: bold;
+    font-size: 30px;
+    color: #3f456b;
+    font-family: "Nunito", sans-serif;
+  
+ }
+
+ p {
+    margin-top: 10px;
+    margin-bottom: 90px;
+    color: #252525;
+    opacity: 0.7;
+    font-size: 18px;
+   font-family: "Nunito", sans-serif;
+ }
+/*
+  hr {
+    border: 0;
+    height: 3px;
+    background: #f4ebf5;
+    width: 59%;
+    margin: 50px auto;
+  }
+   
+
+   
+/*---------------------------------------------------------create gallery------------------------------------*/
+ .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: min(90%, 1000px);
+    margin: 0 auto 75px;
+ }
+
+ .gallery-item {
+    flex: 1 1 calc((100% - 48px) / 3);
+    min-width: 0;
+    margin: 0;
+ }
+
+ .gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+ }
+
+ /*
+.gallery-item img.deer3 {
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+   object-position: bottom;
+}
+*/
+
+
+.gallery-item img.deer3 {
+   aspect-ratio: 4/5;
+   object-fit: cover;
+   object-position: bottom;
+}
+
+.gallery-title h1 {
+   font-family: "Oi", serif;
+}
+
+/*---------------------------------Form input rules-----------------------------------------*/
+
+.form-v2 {
+  background-color: #d7d5fa;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 30%;
+  margin: 0 auto;
+   font-family: "Nunito", sans-serif;
+}
+
+.form-v2 fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form-v2 legend {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #3f456b;
+
+}
+
+.form-v2 label {
+  display: block; 
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: left;
+  color: #252525;
+  opacity: .7;
+}
+
+.form-v2 label:has(input[type="radio"]) {
+   font-weight: normal;
+}
+
+.form-v2 input[type="text"],
+.form-v2 input[type="email"],
+.form-v2 select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        font-size: 1rem;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+.form-v2 button {
+  margin-top: 20px;
+  background-color: #ed9c77;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 20px 0 0;
+}
+
+.form-v2 button:hover {
+  background-color: #f6c382;
+}
+
+/* ------------------------------STYLE NAV AND LINKS AND LOGO---------------------------------------- */
+
+nav {
+
+   font-size: 18px;
+   padding-bottom: 2%;
+}
+
+nav a {
+   color: #3f456b;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+ 
+}
+
+.subHero nav {
+   padding-bottom: 0;
+}
+
+.logo img {
+   width: 200px;
+   height: 200 px;
+}
+
+/*------------------------------STYLE FOOTER-----------------------------------------------*/
+
+footer {
+   background-color: #3f456b;
+   padding: 20px;
+   margin-top: 75px;
+}
+
+footer p {
+   color: #f4ebf5;
+   font-size: 14px;
+   margin: 0;
+}
+
+/*------------------------------ADDITIONAL PAGES STYLE------------------------------------------------*/
+
+.subContent P {
+   width: 75%;
+   text-align: left;
+   margin: 0 auto;
+   padding: 30px;
+   line-height: 30px;
+   margin-bottom: 50px;
+}
+
+.bird-links li {
+   display: inline-block;
+   margin: 20px 10 px;
+   text-align: center;
+   font-size: 22px;
+}
+
+/*-------------------------------------------control bird links when cursor hovers--------------------------------*/
+.bird-links img {
+   width: 250px;
+   height: 180px;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+}
+
+.bird-links img.link-icon {
+   width: 20px;
+   height: 20px;
+   object-fit: contain;
+   margin-top: 8px;
+}
+
+.bird-links a:hover img {
+   transform: scale(1.08);
+}
+
+/*-------------------------------------------subHero style------------------------------------*/
+
+.subHero .navBar img {
+   margin-left: 100px;
+}
+
+.subHero .navBar nav ul {
+   display: flex;
+   gap: 50px;
+   margin-left: -40px;
+   margin-bottom: 22px;
+   font-weight: bold;
+}
+
+.subHero h2 {
+   margin-top: -50px;
+   font-size: 70px;   
+   color: #3f456b;
+   font-family: "Chango", san-serif;
+   margin-bottom: 75px;
+   background-color: #f6c382;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   border: 3px dotted #f6c382;
+}
+
+.mainContent img,
+.birdCard img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 315px;
+    max-width: 100%;
+    border-radius: 10%;
+ }
+
+ .subContent img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 315px;
+    max-width: 100%;
+    border-radius: 10%;
+
+ }
+
+.infoPage img {
+   display: inline-block;
+}
+ /*---------------------------------------MAIN PAGE STYLE------------------------------*/
+ /*
+.hero-image {
+   position: relative;
+   width: 100%;
+   height: 555px;
+   overflow: hidden;
+    opacity: 75%; 
+}
+
+.hero-image::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-color: #ed9c77; 
+   opacity: .8; 
+   pointer-events: none;
+}
+
+.hero-overlay {
+   position: absolute;
+   inset: 0;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero img {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 555px;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: bottom;
+  border: 5px dotted #f6c382;
+}
+*/
+
+/*---------------------------------------------Logo, nav and Hero header style------------------------------------*/
+
+.headBG {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   min-height: 650px;
+   overflow: hidden;
+}
+
+.headBG > img {
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 115%;
+   object-fit: cover;
+   object-position: bottom;
+}
+
+.headBG .navBar,
+.headBG .hero-overlay {
+   position: relative;
+   z-index: 1;
+}
+
+.headBG .navBar {
+   z-index: 2;
+}
+
+.navBar {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 16px 5%;
+   margin: 10px;
+}
+
+.headBG .logo img {
+   display: block;
+   width: 200px;
+   height: auto;
+   margin-left: 100px;
+}
+
+.headBG nav {
+   margin: 0;
+   padding: 0;
+   margin-right: 100px;
+}
+
+.headBG nav ul {
+   display: flex;
+   gap: 50px;
+   margin: 0;
+   padding: 0;
+}
+
+.headBG nav li {
+   display: block;
+   margin: 0;
+   font-weight: bold;
+}
+
+.headBG .hero-overlay {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 24px;
+
+   transform: translateY(-250px);
+}
+
+.headBG .hero-overlay h2 {
+   width: 100%;
+   text-align: right;
+   margin-right: 360px;
+
+}
+
+/*---------------------------------------Component styles--------------------------------------*/
+
+.hero cite {
+ display: block;
+ text-align: center;
+ color: #3f456b;
+ padding: 0;
+ margin-bottom: 50px;
+}
+
+.cardGroup h2 {
+   color: #ed9c77;
+   font-size: 50px;
+   margin-bottom: 70px;
+   margin-top:100px;
+   font-family: "DM Serif Display", serif;
+}
+
+#table-title h2 {
+   color: #ed9c77;
+   font-size: 50px;
+   margin-bottom: 70px;
+   margin-top:100px;
+}
+
+/*------------------------------------------bird cards ------------------------------*/
+
+.birdCard {
+ display: inline-block;
+ max-width: 28%;
+ height: auto;
+ border-radius: 30px;
+ background-color: #d7d5fa;
+ border: 1px solid #ccc;
+ padding: 10px;
+ padding-bottom: 20px;
+ margin: 1%;
+}
+
+.birdCard p {
+ font-size: 18px;
+ line-height: 24px;
+}
+
+.cardGroup {
+ font-family: "Nunito", sans-serif;
+ text-align: center;
+}
+
+/*--------------------------------------style quote-------------------------------------*/
+
+.quote {
+   padding-top: 0;
+}
+
+.quote hr {
+   width: 1%;
+   margin: 10px auto;
+   margin-top: 75px;
+   background-color: #d7d5fa;
+}
+
+.hero blockquote {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 6px;
+ text-align: center;
+ max-width: 100%;
+ margin: 0;
+ margin-top: 50px;
+ margin-bottom: 10px;
+ font-weight: bold;
+ font-size: 30px;
+ color: #3f456b;
+ padding-top: 0%;
+}
+
+
+/*--------------------------------HERO STYLE--------------------------------------*/
+
+.hero hr {
+   margin-bottom: 10px;
+}
+
+.hero {
+   position: relative;
+}
+
+
+.hero header {
+   text-align: center;
+}
+
+/*---------------------------------icon style---------------------------------------*/
+
+.subContent img.link-icon {
+   height: 20px;
+   width: 20px;
+   vertical-align: middle;
+   margin: 0 6px 0 0;
+}
+
+.quote img.speak-icon {
+   height: 20px;
+   width: 20px;
+   border: none;
+   flex: 0 0 auto;
+   margin: 0;
+}
+
+.cardGroup img.love-icon {
+   display: inline-block;
+   height: 30px;
+   width: 30px;
+   vertical-align: middle;
+   border: none;
+   flex: 0 0 auto;
+   margin: 0;
+   padding-right: 10px;
+   padding-bottom: 3px;
+}
+
+#table-title img.fast-icon {
+   height: 30px;
+   width: 30px;
+   border: none;
+   flex: 0 0 auto;
+   margin: 0;
+   padding-right: 10px;
+   padding-bottom: 3px;
+}
+
+.subContent img.think-icon {
+   display: inline-block;
+   height: 25px;
+   width: 20px;
+   vertical-align: middle;
+   margin: 0 6px 0 0;
+}
+
+.birdCard img.think-icon {
+   display: inline-block;
+   height: 25px;
+   width: 20px;
+   vertical-align: middle;
+   margin: 0 6px 0 0;
+}
+
+.table-card img.fast-icon{
+   height: 30px;
+   width: 30px;
+   border: none;
+   flex: 0 0 auto;
+   margin: 0;
+   padding-right: 10px;
+}
+
+img.bird-icon {
+   height: 50px;
+   width: 40px;
+   vertical-align: middle;
+   margin: 0 6px 0 0;
+   padding-bottom: 50px;
+}
+
+/*------------------------------------------MEDIA QUERIES------------------------------------*/
+@media (max-width: 600px) {
+   .headBG .hero-overlay h1 {
+      font-size: 35px;
+   }
+   .headBG .hero-overlay h2 {
+      font-size: 19px;
+      text-align: center;
+      margin-right: 0;
+   }
+   .headBG .navBar .logo img {
+      width: 130px;
+      height: auto;
+      margin-left: 0;
+   }
+   .quote {
+      margin-top: -300px;
+   }
+   .headBG img {
+      height: 70%;
+      object-fit: cover;
+      object-position: bottom;
+   }
+   li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+   .subHero h2 {
+      font-size: 35px;
+      padding: 60px;
+   }
+   .subHero .navBar .logo img {
+     width: 130px;
+     height: auto;
+     margin-left: 0;
+   }
+   .form-v2 {
+      width: min(90%, 100%);
+      box-sizing: border-box;
+   }
+   .birdCard {
+      max-width: 90%;
+      margin: 20px auto;
+   }
+   .table-info {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+}
