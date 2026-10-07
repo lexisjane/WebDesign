@@ -53,17 +53,7 @@
   </header>
 </div>
 
-<div class="hero">
-    <div class="quote">
-    <hr>
-    <blockquote>
-    <img class="speak-icon" src="images/Icons/Icon2.png" alt="">
-    <span>The bluebird carries the sky on his back.</span>
-    </blockquote>
-    <cite>Henry David Thoreau</cite>
-    <hr>
-    </div>
-</div>
+
 
 <!-----------------------------------main content------------------------------------->
 
@@ -123,7 +113,7 @@
     </tr>
   <tbody>
     <tr>
-      <td>Charadrius vociferus</td>
+      <td><i>Charadrius vociferus</i></td>
       <td>Flat open ground</td>
       <td>March - September</td>
     </tr>
@@ -143,7 +133,7 @@
     </tr>
   <tbody>
     <tr>
-      <td>Histrionicus histrionicus</td>
+      <td><i>Histrionicus histrionicus</i></td>
       <td>Fast moving water</td>
       <td>April - September</td>
     </tr>
@@ -163,7 +153,7 @@
     </tr>
   <tbody>
     <tr>
-      <td>Antigone canadensis</td>
+      <td><i>Antigone canadensis</i></td>
       <td>Wetlands & open lands</td>
       <td>March - October</td>
     </tr>
@@ -172,6 +162,59 @@
 </div>
 
 
+</div>
+
+<!--------------------------------------------form------------------------------------->
+
+<form class="form-v2">
+  <fieldset>
+    <legend>Want to learn more about birds?</legend>
+
+    <br><label>Your Name:</label>
+    <input type="text" name="name" placeholder="e.g. John Smith">
+
+    <label>Email Adress:</label>
+    <input type="text" name="email" placeholder="e.g. JohnSmith@example.com">
+
+    <label>What information would you like to see this site feature?</label>
+    <input type="text" name="favorite-bird" placeholder="Type Here">
+
+    <label>Favorite bird featured so far:</label> <!----drop down--->
+    <select name="Bird">
+    <option value="Killdeer">Killdeer</option>
+    <option value="Harlequin Duck">Harlequin Duck</option>
+    <option value="Sandhill Crane">Sandhill Crane</option>
+    </select>
+
+   <label>Do you like birds?</label> <!--radio selection--->
+   <label><input type="radio" name="format" value="print"> Yes! Love them!</label>
+   <label><input type="radio" name="format" value="audio"> Nope</label>
+   <label><input type="radio" name="format" value="live"> As much as the average person</label>
+
+
+   <label>
+   <input type="checkbox" name="subscribe" value="yes">
+    Check here to be a part of our monthly newsletter.
+   </label>
+
+
+    <button type="submit">Submit</button>
+</fieldset>
+</form>
+
+<!--------------------------------------------------quote------------------------------------>
+
+<div class="hero">
+    <div class="quote">
+
+
+    <blockquote>
+    <img class="speak-icon" src="images/Icons/Icon2.png" alt="">
+    <span>The bluebird carries the sky on his back.</span>
+    </blockquote>
+    <cite>Henry David Thoreau</cite>
+    
+    </div>
 </div>
 
 <!----------------------------------------------footer------------------------------------>
