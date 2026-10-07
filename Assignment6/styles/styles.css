@@ -201,7 +201,12 @@ header {
 }
 
 /*---------------------------------Form input rules-----------------------------------------*/
-
+#form-header h2 {
+   font-family: "Chango", sans-serif;
+   color: #3f456b;
+   font-size: 60px;
+   margin-bottom: 80px;
+}
 .form-v2 {
   background-color: #f6c382;
   padding: 20px;
@@ -320,7 +325,7 @@ footer p {
 /*------------------------------ADDITIONAL PAGES STYLE------------------------------------------------*/
 
 .subContent P {
-   width: 75%;
+   width: 80%;
    text-align: left;
    margin: 0 auto;
    padding: 30px;
@@ -355,6 +360,7 @@ footer p {
 
 .bird-links a:hover img {
    transform: scale(1.08);
+   opacity: .6;
 }
 
 /*-------------------------------------------subHero style------------------------------------*/
@@ -549,7 +555,7 @@ footer p {
 .cardGroup h2 {
    color: #3f456b;
    font-size: 60px;
-   margin-bottom: 90px;
+   margin-bottom: 80px;
    margin-top:150px;
    font-family: "Chango", sans-serif;
 }
@@ -557,7 +563,7 @@ footer p {
 #table-title h2 {
    color: #3f456b;
    font-size: 60px;
-   margin-bottom: 90px;
+   margin-bottom: 80px;
    margin-top:150px;
    font-family: "Chango", sans-serif;
 }
@@ -718,6 +724,7 @@ img.bird-icon {
 
 /*------------------------------------------MEDIA QUERIES------------------------------------*/
 @media (max-width: 600px) {
+   /* header 1, 2 and 3*/
    .headBG .hero-overlay h1 {
       font-size: 35px;
    }
@@ -726,13 +733,26 @@ img.bird-icon {
       text-align: center;
       margin-right: 0;
    }
+   h3 {
+      font-size: 18px;
+      margin-top: -200px;
+      margin-bottom: -20px;
+   }
+   /* navBar */
    .headBG .navBar .logo img {
       width: 130px;
       height: auto;
       margin-left: 0;
    }
+   nav a {
+      font-size: 18px;
+   }
+   /* quote */
    .quote {
-      margin-top: -300px;
+      margin-top: 80px;
+   }
+   .quote span {
+      font-size: 22px;
    }
    .headBG img {
       height: 70%;
@@ -744,25 +764,52 @@ img.bird-icon {
       margin-right: 0;
       margin-bottom: 10px;
    }
+   /* additional pages */
    .subHero h2 {
       font-size: 35px;
-      padding: 60px;
+      margin-top: -85px;
+   }
+   .subContent p {
+      font-size: 18px;
+      margin-top: -50px;
    }
    .subHero .navBar .logo img {
      width: 130px;
      height: auto;
      margin-left: 0;
    }
+
+   /* form */
    .form-v2 {
       width: min(90%, 100%);
       box-sizing: border-box;
+   }
+   #form-header h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      margin-top: 90px;
+   }
+   /* bird cards */
+   .cardGroup h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      margin-top: 90px;
    }
    .birdCard {
       max-width: 90%;
       margin: 20px auto;
    }
+   /* table */
    .table-info {
       grid-template-columns: 1fr;
-      gap: 20px;
+      gap: 0;
+   }
+   .table-card {
+      margin-bottom: 30px;
+   }
+   #table-title h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      margin-top: 90px;
    }
 }
