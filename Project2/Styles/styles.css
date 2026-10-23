@@ -1,0 +1,144 @@
+/*---------------------------------fonts------------------------*/
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*---------------------------style navBar----------------------*/
+
+.navBar nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-family: Sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.navBar nav a:hover {
+    transform: scale(1.15); 
+}
+.navBar ul {
+  display: flex;               
+  justify-content: flex-end;    
+  list-style-type: none;    
+  margin: 0;
+  margin-right: 8%;
+  margin-top: 2%;
+  padding: 0;
+  gap: 5%;
+}
+
+.navBar {
+    background-color: #78271e;
+    border-radius: 4px;
+    padding: 8px;
+    padding-bottom: 40px;
+}
+
+/*--------------------------------style main header------------*/
+
+.hero-header h1 {
+    font-size: 100px;
+    margin: 0;
+    font-family: "Passion one";
+}
+
+.hero-overview h2 {
+    font-size: 22px;
+    margin: 0;
+    font-family: Sans-serif;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    background-color: white;
+    box-shadow: -8em 0 0 white;
+    
+}
+
+/*--------------------------------------style hero image------------*/
+
+.hero-container img {
+    display: block;
+    height: auto;
+    max-width: none;
+    max-height: 550px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 50% minmax(0, 1fr);
+  align-items: strecth;
+  gap: 8 rem;
+  margin-top: 2%;
+}
+
+/*------------------------------------------style contact button--------*/
+
+.button nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.button nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  padding: 10px 10px;    
+  background-color: #78271e; 
+  color: #ffffff;   
+  border-radius: 4px; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #78271eb3; 
+  transform: scale(1.15); 
+}
+
+/*---------------------------------------style table of contents--------------------*/
+
+.home-content h3 {
+    font-family: Sans-serif;
+    font-size: 40px;
+    margin-top: 8%;
+    margin-left: 8%;
+}
+
+/*----------------------------------style content cards-----------------------------*/
+
+.content-cards img {
+    width: 20%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+}
