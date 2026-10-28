@@ -138,12 +138,15 @@
     font-size: 100px;
     margin: 0;
     font-family: "Passion one";
+    padding-bottom: 50px;
 }
 
 .hero-overview h2 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
     font-family: Sans-serif;
+    margin-right: 2%;
+    line-height: 1.5;
 }
 
 .hero-text {
@@ -152,7 +155,7 @@
     justify-content: center;
     gap: 1rem;
     background-color: white;
-    box-shadow: -8em 0 0 white;
+  /*  box-shadow: -8em 0 0 white; */
     
 }
 
@@ -163,9 +166,10 @@
     height: auto;
     max-width: none;
     max-height: 550px;
-    width: 100%;
+    width: 85%;
     object-fit: cover;
     border-radius: 4px;
+    margin-left: 2%;
 
 }
 
@@ -297,6 +301,92 @@
 
 .content-cards figure:has(figcaption:hover) img {
     opacity: .6;
+}
+
+/*---------------------------------stle activity cards---------------------*/
+
+.activities-content {
+  margin-top: 5%;
+}
+
+.activity-section {
+  margin-bottom: 2rem;
+}
+
+.activity-section h3 {
+  color: #333;
+  font-family: Sans-serif;
+  font-size: 50px;
+  margin-left: 2rem;
+}
+
+.activity-section--outdoor {
+  background-color: #78271e;
+  padding-top: 1px;
+}
+
+.activity-section--low {
+  background-color: #78271e;
+  padding-top: 1px;
+}
+
+.activity-section--outdoor h3 {
+  color: white;
+}
+
+.activity-section--low h3 {
+  color: white;
+}
+
+.activity-section--indoor .activity-cards figcaption a {
+  color: black;
+}
+
+.activity-section--low .activity-cards figcaption a {
+  color: white;
+}
+
+.activity-cards figcaption {
+    font-family: Sans-serif;
+    font-size: 22px;
+    margin-top: 8%;
+}
+
+.activity-cards a {
+  color: white;
+  text-decoration: none;
+}
+
+.activity-scroller {
+  display: flex;
+  gap: 8rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  padding: 1% 2rem 3% 25vw;
+  scroll-padding-left: 25vw;
+  scroll-padding-right: 25vw;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 2rem;
+  background-color: transparent;
+}
+
+.activity-cards {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+}
+
+.activity-cards figure {
+  margin: 0;
+}
+
+.activity-cards img {
+  display: block;
+  width: 120%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
 }
 
 /*----------------------------------------------style footer----------------------*/
