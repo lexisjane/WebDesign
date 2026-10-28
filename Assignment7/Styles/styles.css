@@ -46,6 +46,41 @@
   gap: 10px; /* adds consistent space between elements */
 }
 
+/*----------------------------------grid example----------------*/
+
+.gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: auto;
+  padding: 10px;
+}
+
+.grid-example {
+  text-align: center;
+}
+
+.item {
+  background-color: rgb(71, 71, 96);
+  border-radius: 8px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+}
+
+.item img {
+  padding: 0;
+  width: 100%; /* this makes the image fill the container’s width */
+  height: auto; /* auto maintains the image's aspect ratio */
+  display: block; /* block clears any space after the image */
+  border-radius: 8px;
+}
+
+.item p {
+  text-align: center; /* centers the text horizontally */
+  display: flex; /* turns the <p> into a flex container */
+  align-items: center; /* allows us to center the flex container's content vertically */
+}
 /*---------------------------------fonts------------------------*/
 .passion-one-regular {
   font-family: "Passion One", sans-serif;
