@@ -10,7 +10,7 @@ Montana is home to over 400 different bird species. In this web page you will fi
 - Type of component: 
     - New navigation menu. 
 - Why it's needed: 
-    - Add interest to navigation menu.
+    - Adds interest to navigation menu.
 - Features:
     - It will require links and possible graphics.
 - What you'll use to build it:

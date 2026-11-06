@@ -36,4 +36,3 @@ Montana is home to over 400 different bird species. In this web page you will fi
     - This is the most challenging part for me. It took me hours of back and forth searching to figure out how to get these elements to work correctly. Creating them was easy, designing and modifying the layout, not so much. I am still pretty underconfident in my understanding of how to design these elements.
 - Exploring display: flex;
     - Also another tricky aspect for me to understand. I had to do some additional research to be able to correctly apply this for how I wanted my gallery to look.
-
