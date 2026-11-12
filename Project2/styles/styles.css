@@ -109,9 +109,20 @@ body {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 10px;
-    margin-left: 30%;
-    border: solid 5px #2a2f42;
+   /* margin-left: 30%; 
+    border: solid 5px #2a2f42; */
     transform: rotate(-8deg);
+}
+
+.hero-image {
+  width: 450px;
+  height: 450px;
+  background-color: #dcb26e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
 }
 
 #alt-image img {
@@ -124,11 +135,11 @@ body {
   align-items: strecth;
   gap: 1rem;
   margin-top: 5%;
-  background-color: #e4e9ee;
+  background-color: #EBF1FF;
 }
 
 .page-header {
-  background-color: #e4e9ee;
+  background-color: #EBF1FF;
   border-radius: 50px;
 }
 
@@ -151,9 +162,9 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 10px 10px;    
-  background-color: #7989a8; 
+  background-color: #dcb26e; 
   color: #fefcf9;   
   border-radius: 50px; 
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -180,7 +191,7 @@ body {
     margin: 0;
     border: 0;
     border: 2px solid;
-    color:#32343d;
+    color:#dcb26e;
 }
 
 /*----------------------------------style content cards-----------------------------*/
@@ -306,7 +317,7 @@ html {
   margin-top: -1%;
   margin-bottom: 2%;
   border: 2px solid;
-  color:#32343d;
+  color:#dcb26e;
 }
 
 .activity-section {
@@ -329,7 +340,7 @@ html {
 }
 
 .activity-section--indoor {
-  background-color: #e4e9ee;
+  background-color: #EBF1FF;
   padding-top: 2%;
   padding-bottom: 1%;
 }
@@ -339,7 +350,7 @@ html {
   margin-top: -1%;
   margin-bottom: 2%;
   border: 2px solid;
-  color:#32343d;
+  color:#dcb26e;
 }
 
 .activity-section--shop {
@@ -347,7 +358,7 @@ html {
 }
 
 .activity-section--dine {
-  background-color: #e4e9ee;
+  background-color: #EBF1FF;
   padding-top: 2%;
   padding-bottom: 1%;
 }
@@ -441,7 +452,7 @@ html {
   margin-right: 15rem;
   margin-top: -1%;
   border: 2px solid;
-  color:#32343d;
+  color:#dcb26e;
 }
 
 .calendar {
@@ -468,8 +479,7 @@ html {
   bottom: -2rem;
   left: 12%;
   width: 75%;
-  background: #e4e9ee;
-  border: 1px solid #d3d3d3;
+  background: #EBF1FF; 
   border-radius: 10px;
 }
 
@@ -556,7 +566,7 @@ html {
 }
 
 .vertical-bar-connect {
-  border-left: 4px solid #32343d; 
+  border-left: 4px solid #dcb26e; 
   height: 180px;            
   margin: 0;
 }
@@ -591,7 +601,7 @@ html {
   margin-bottom: 1%;
 }
 .form-v2 {
-  background-color: #e4e9ee;
+  background-color: #EBF1FF;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #ccc;
