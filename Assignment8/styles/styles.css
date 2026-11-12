@@ -149,7 +149,7 @@
 }
 
 .navBar nav {
-    margin-left: 170px;
+    margin-right: 9rem;
 }
 
 /*--------------------------------style main header------------*/
@@ -817,4 +817,97 @@ footer p {
   border-left: 2px solid #fefcf9; /* Thickness, line style, and color */
   height: 10rem;                /* Define how tall you want the bar to be */
   margin: 0;
+}
+
+/*----------------------------------------media queries-------------------------------*/
+
+@media (max-width: 900px) {
+
+ /*---------------------NAV------------------*/
+    .navBar {                          
+    height: auto;
+    min-height: 64px;
+    padding: 12px 16px 12px 80px;
+    border-radius: 24px;
+  }
+
+  .navBar > img {
+    width: 120px;
+    height: 120px;
+    left: -30px;
+  }
+
+  .navBar nav {
+    margin: 0;
+  }
+
+  .navBar ul {
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .navBar nav a {
+    font-size: 16px;
+  }
+/*-------------------HERO------------------*/
+   .hero-image {
+    width: 250px;
+    height: auto;
+    margin-left: -18%;
+  }
+
+   .hero-header h1 {
+    font-size: 40px;
+    margin-right: -5rem;
+  }
+
+  .hero-overview h2 {
+    font-size: 15px;
+    margin-right: -5rem;
+    margin-top: -3rem;
+  }
+/*--------------------INDEX CONTENT-----------*/
+  .home-content {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  }
+
+  .home-content h3 {
+    font-size: 30px;
+  }
+/*------------------------FOOTER-----------*/
+  .footer-logo {
+    object-fit: contain;
+    position: static;
+    transform: none;
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: -3rem auto;
+
+  }
+
+  .footer-info {
+    gap: 1rem;
+  }
+
+  .footer-info h1 {
+    font-size: 40px;
+  }
+
+  .footer-info h2 {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 10px;
+    margin-top: 2rem;
+  }
+
+
+
+
+
+
+
+
 }
