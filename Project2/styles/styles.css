@@ -396,7 +396,7 @@ html {
 
 .activity-scroller {
   display: flex;
-  gap: 6rem;
+  gap: 4rem;
   width: 100%;
   box-sizing: border-box;
   overflow-x: auto;
