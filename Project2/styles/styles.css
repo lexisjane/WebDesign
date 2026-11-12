@@ -440,7 +440,7 @@ html {
 /*------------------------------------------------------------------------------------------------*/
 
 .community-content h3 {
-  color: #333;
+  color: #32343d;
   font-family: Sans-serif;
   font-size: 40px;
   margin-left: 15rem;
@@ -477,8 +477,9 @@ html {
   z-index: -1;
   top: -2rem;
   bottom: -2rem;
-  left: 12%;
-  width: 75%;
+  left: 15rem;
+  right: 15rem;
+  width: auto;
   background: #EBF1FF; 
   border-radius: 10px;
 }
@@ -489,7 +490,7 @@ html {
   margin: 0 0 8px;
   margin-left: 2rem;
   color:#32343d;
-  margin-right: 15rem;
+  margin-right: 18rem;
 }
 
 .event-detail h1 {
@@ -511,7 +512,7 @@ html {
 
 .event-detail p {
   font-size: 16px;
-  margin: 2rem 15rem 8px 2rem;
+  margin: 2rem 18rem 8px 2rem;
   line-height: 1.5;
 }
 /*----------------------------------style calendar icon-------------------*/
@@ -528,13 +529,13 @@ html {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin-left: 15rem;
+  margin-left: 18rem;
 
 }
 
 .calendar-top {
   height: 15px;
-  background-color: #824330;
+  background-color: #dcb26e;
   border-bottom: 2px solid #32343d;
 }
 
@@ -561,7 +562,6 @@ html {
 
 .connect-content {
   background-color: #fefcf9;
-  padding-top: 10%;
   padding-bottom: 5rem;
 }
 
@@ -577,6 +577,7 @@ html {
   margin-left: 15rem;
   gap: 2rem;
   margin-bottom: 5%;
+  margin-top: 6%;
 }
 
 .connect-words {
@@ -707,7 +708,6 @@ html {
   width: 300px;
   height: auto;
 }
-
 
 footer h1 {
   font-family: "Passion One", sans-serif;
