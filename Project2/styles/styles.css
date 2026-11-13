@@ -18,10 +18,18 @@
   font-style: normal;
 }
 
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
 /*---------------------------style navBar----------------------*/
 
 body {
   background-color: #fefcf9;
+  font-family: "Manrope";
 }
 
 .navBar nav a {
@@ -29,7 +37,6 @@ body {
     text-decoration: none;
     font-size: 22px;
     color: #fefcf9;
-    font-family: Sans-serif;
     transition: transform 0.3s ease;
 }
 
@@ -69,7 +76,7 @@ body {
 }
 
 .navBar nav {
-    margin-right: 9rem;
+    margin-right: 8rem;
 }
 
 /*--------------------------------style main header------------*/
@@ -83,8 +90,8 @@ body {
 
 .hero-overview h2 {
     font-size: 20px;
+    font-weight: 500;
     margin: 0;
-    font-family: Sans-serif;
     line-height: 1.5;
     margin-top: -8%;
 }
@@ -109,8 +116,6 @@ body {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 10px;
-   /* margin-left: 30%; 
-    border: solid 5px #2a2f42; */
     transform: rotate(-8deg);
 }
 
@@ -177,7 +182,6 @@ body {
 /*---------------------------------------style table of contents--------------------*/
 
 .home-content h3 {
-    font-family: Sans-serif;
     font-size: 40px;
     margin-top: 12%;
     margin-bottom: -2%;
@@ -253,7 +257,6 @@ body {
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    font-family: Sans-serif;
     font-size: 22px;
     border-radius: 0 0 10px 10px;
     padding: 10px;
@@ -325,8 +328,7 @@ html {
 }
 
 .activity-section h3 {
-  color: #333;
-  font-family: Sans-serif;
+  color: #32343d;
   font-size: 40px;
   margin-left: 15rem;
 }
@@ -362,29 +364,8 @@ html {
   padding-top: 2%;
   padding-bottom: 1%;
 }
-/*
-.activity-section--indoor h3 {
-  color: #fefcf9; 
-}
 
-.activity-section--outdoor h3 {
-  color: #32343d;
-}
-
-.activity-section--low h3 {
-  color: #32343d;
-}
-
-.activity-section--outdoor .activity-cards figcaption a {
-  color: #32343d;
-}
-
-.activity-section--low .activity-cards figcaption a {
-  color: #32343d;
-}
-*/
 .activity-cards figcaption {
-    font-family: Sans-serif;
     font-size: 22px;
     margin-top: 8%;
 }
@@ -441,7 +422,6 @@ html {
 
 .community-content h3 {
   color: #32343d;
-  font-family: Sans-serif;
   font-size: 40px;
   margin-left: 15rem;
   padding-top: 5%;
@@ -468,7 +448,6 @@ html {
   align-items: flex-start;
   gap: 40px;
   margin: 5% 0 7rem;
-  font-family: Sans-serif;
 }
 
 .event::before {
@@ -547,7 +526,6 @@ html {
 }
 
 .calendar-day {
-  font-family: sans-serif;
   font-size: 28px;
   font-weight: bold;
   color: #32343d;
@@ -588,7 +566,6 @@ html {
 
 .connect-content h1,
 .connect-content p {
-  font-family: sans-serif;
   margin-right: 15rem;
   color: #32343d;;
 }
@@ -605,11 +582,9 @@ html {
   background-color: #EBF1FF;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #ccc;
   width: min(900px, 90%);
   box-sizing: border-box;
   margin: 0 auto;
-  font-family: sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -617,7 +592,6 @@ html {
 .form-v2 legend {
   grid-column: 1 / -1;
   font-size: 40px;
-  font-family: sans-serif;
   margin-bottom: 5%;
   color: #32343d;
 }
@@ -716,9 +690,9 @@ footer h1 {
 }
 
 footer h2 {
-  font-family: Sans-serif;
   font-size: 20px;
   color: #fefcf9;
+  font-weight: 300;
 }
 
 footer {
@@ -743,16 +717,15 @@ footer {
 }
 
 footer p {
-   color: #fefcf9;
+   color: #dcb26e;
    font-size: 14px;
-   font-family: Sans-serif;
    margin: 0;
    text-align: center;
 }
 
 .vertical-bar {
-  border-left: 2px solid #fefcf9; /* Thickness, line style, and color */
-  height: 10rem;                /* Define how tall you want the bar to be */
+  border-left: 2px solid #dcb26e; 
+  height: 10rem;               
   margin: 0;
 }
 
@@ -949,12 +922,4 @@ footer p {
     font-size: 10px;
     margin-top: 2rem;
   }
-
-
-
-
-
-
-
-
 }
