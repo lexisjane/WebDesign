@@ -35,7 +35,8 @@ body {
 .navBar nav a {
     display: inline-block;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: bold;
     color: #fefcf9;
     transition: transform 0.3s ease;
 }
@@ -61,7 +62,7 @@ body {
     box-sizing: border-box;
     background-color: #7989a8;
     border-radius: 50px 0px 0px 50px;
-    padding-right: 5rem;
+
 }
 
 .navBar > img {
@@ -76,7 +77,13 @@ body {
 }
 
 .navBar nav {
-    margin-right: 8rem;
+  margin-right: 3rem;
+}
+
+.connect-link li a {
+  padding: 10px 10px;    
+  background-color: #dcb26e;   
+  border-radius: 50px; 
 }
 
 /*--------------------------------style main header------------*/
@@ -155,6 +162,8 @@ body {
     text-align: center;
     text-decoration: none;
     color: #fefcf9;
+    font-weight: bold;
+    letter-spacing: .05rem;
 }
 
 .button nav ul {
@@ -168,7 +177,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
-  padding: 10px 10px;    
+  padding: 20px 20px;    
   background-color: #dcb26e; 
   color: #fefcf9;   
   border-radius: 50px; 
@@ -316,9 +325,10 @@ html {
 
 
 .activities-content hr {
-  margin-left: 15rem;
+  margin-left: 2rem;
   margin-top: -1%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+  margin-right: 2rem;
   border: 2px solid;
   color:#dcb26e;
 }
@@ -330,7 +340,7 @@ html {
 .activity-section h3 {
   color: #32343d;
   font-size: 40px;
-  margin-left: 15rem;
+  margin-left: 2rem;
 }
 
 .activity-section--outdoor {
@@ -348,9 +358,10 @@ html {
 }
 
 .shop-dine-content hr { 
-  margin-left: 15rem;
+  margin-left: 2rem;
   margin-top: -1%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+  margin-right: 2rem;
   border: 2px solid;
   color:#dcb26e;
 }
@@ -375,6 +386,7 @@ html {
   text-decoration: none;
 }
 
+/*
 .activity-scroller {
   display: flex;
   gap: 4rem;
@@ -387,11 +399,26 @@ html {
   scroll-snap-type: x mandatory;
   scroll-padding-inline: 15rem;
   background-color: transparent;
+
 }
+
 
 .activity-cards {
   flex: 0 0 275px;
   scroll-snap-align: start;
+}
+*/
+
+.activity-scroller {
+display: flex;
+gap: 2rem;
+padding: 2rem;
+overflow-x: hidden;
+}
+
+.activity-cards {
+flex: 1;
+min-width: 0;
 }
 
 .activity-cards figure {
@@ -675,18 +702,20 @@ html {
 /*------------------------------------------------------------------------------------------------*/
 
 .footer-logo {
-  position: absolute;
+ /* position: absolute;
   left: 10rem;
-  top: 46%;
-  transform: translateY(-50%);
-  width: 300px;
+  top: 46%; 
+  transform: translateY(-50%); */
+  width: 220px;
   height: auto;
 }
 
 footer h1 {
   font-family: "Passion One", sans-serif;
   color:#fefcf9;
-  font-size: 5rem;
+  font-size: 3rem;
+  text-align: left;
+  margin: 0;
 }
 
 footer h2 {
@@ -696,31 +725,45 @@ footer h2 {
 }
 
 footer {
-   background-color: #2a2f42;
    padding: 10px;
    margin-top: 75px;
    padding-bottom: 20px;
    position: relative;
 }
 
+.top-footer {
+  background-color: #2a2f42;
+}
+
 .footer-info {
-   display: flex;
+   display: grid;
+   grid-template-columns: minmax(0, 1fr) 2px minmax(0, 1fr);
    align-items: center;
-   justify-content: center;
-   gap: 5rem;
+   width: min(900px, calc(100% - 2rem));
+   margin: 0 auto;
+   gap: 3rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .footer-details {
+  display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   margin: 0;
 }
 
 footer p {
-   color: #dcb26e;
+   color:#EBF1FF;
    font-size: 14px;
    margin: 0;
    text-align: center;
+   background-color: #dcb26e;
+   padding: 1rem;
 }
 
 .vertical-bar {
@@ -733,6 +776,7 @@ footer p {
 /*----------------------------------------media queries-------------------------------------------*/
 /*------------------------------------------------------------------------------------------------*/
 
+/*----PHONE-----*/
 @media (max-width: 600px) {
 
  /*---------------------NAV------------------*/
@@ -761,11 +805,15 @@ footer p {
   .navBar nav a {
     font-size: 16px;
   }
+
+  .page-header {
+    border-radius: 20px;
+  }
 /*-------------------HERO------------------*/
    .hero-image {
-    width: 230px;
+    width: 100%;
     height: auto;
-    margin-left: -18%;
+    margin-left: -.05rem;
   }
 
    .hero-header h1 {
@@ -778,6 +826,11 @@ footer p {
     margin-right: -5rem;
     margin-top: -3rem;
   }
+
+  .hero-text {
+    margin-right: 5rem;
+    padding: 1rem;
+}
 /*-----------------INDEX CONTENT-----------*/
   .home-content {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
@@ -820,14 +873,29 @@ footer p {
   font-size: 15px;
 }
 /*---------------------ACTIVITIES---------*/
+.activity-scroller {
+gap: 1rem;
+padding: 1rem;
+scroll-padding-inline: 1rem;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+}
+
+.activity-cards {
+flex: 0 0 70%;
+scroll-snap-align: start;
+}
+
 .activity-section h3 {
   font-size: 30px;
   margin-left: 1rem;
 }
 
 .activities-content hr {
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 0;
 }
+/*
 .activity-scroller {
   padding: 1% 2rem 3% 3vw;
   gap: 2rem;
@@ -840,9 +908,10 @@ footer p {
 .activity-cards figcaption {
   font-size: 15px;
 }
-
+*/
 .shop-dine-content hr { 
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 0;
 }
 /*---------------------COMMUNITY----------*/
 .community-content h3 {
@@ -897,29 +966,99 @@ footer p {
 
 /*---------------------FOOTER-------------*/
   .footer-logo {
-    object-fit: contain;
-    position: static;
-    transform: none;
-    display: block;
-    width: 200px;
-    height: auto;
-    margin: -3rem auto;
+    width: clamp(90px, 24vw, 120px);
+    flex-shrink: 0;
   }
 
   .footer-info {
+    grid-template-columns: minmax(0, 1fr) 2px minmax(0, 1fr);
+    width: calc(100% - 2rem);
     gap: 1rem;
   }
 
+  .footer-brand {
+    justify-content: flex-end;
+    min-width: 0;
+  }
+
   .footer-info h1 {
-    font-size: 40px;
+    font-size: clamp(22px, 6vw, 32px);
   }
 
   .footer-info h2 {
-    font-size: 15px;
+    font-size: clamp(10px, 2.5vw, 13px);
+    line-height: 1.3;
+  }
+
+  .footer-details {
+    align-items: flex-start;
+    min-width: 0;
+  }
+
+  .vertical-bar {
+    border-left: 2px solid #dcb26e;
+    width: 2px;
+    height: clamp(7rem, 22vw, 9rem);
   }
 
   footer p {
     font-size: 10px;
-    margin-top: 2rem;
   }
+}
+
+/*------TABLET-------*/
+@media (min-width: 601px) and (max-width: 1024px) {
+
+/*-----------HEADER------*/
+  .hero-container {
+    grid-template-columns: 45% minmax(0, 55%);
+  }
+
+  .hero-image {
+    width: calc(100% - 1.5rem);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-left: 1.5rem;
+  }
+
+  .hero-header h1 {
+    font-size: clamp(48px, 7vw, 70px);
+  }
+
+  .hero-text {
+    margin-right: 5%;
+    min-width: 0;
+    margin-left: 10%;
+  }
+
+/*---------NAV----------*/
+/*---------ACTIVITIES---*/
+  .activity-scroller {
+    overflow-x: auto;
+    padding: 2rem;
+    scroll-padding-inline: 2rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .activity-cards {
+    flex: 0 0 40%;
+    scroll-snap-align: start;
+  }
+
+  .activities-content hr {
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+
+  .shop-dine-content hr { 
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+
+  .activity-section h3 {
+    margin-left: 2rem;
+  }
+
+/*---------COMMUNITY----*/
+/*---------CONNECT------*/
 }

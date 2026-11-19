@@ -36,10 +36,13 @@
     <img src="images/explore_logo.png" alt="logo">
   <nav>
     <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./activities.html">Activities</a></li>
-      <li><a href="./shop:dine.html">Shop/Dine</a></li>
-      <li><a href="./community.html">Community</a></li>
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./activities.html">EXPLORE</a></li>
+      <li><a href="./shop:dine.html">ENJOY</a></li>
+      <li><a href="./community.html">COMMUNITY</a></li>
+      <div class="connect-link">
+      <li><a href="./connect.html">CONNECT</a></li>
+      </div>
     </ul>
   </nav>
 </div>
@@ -242,9 +245,12 @@
 <!-----------------------------------------footer----------------->
 
 <footer>
-  <img class="footer-logo" src="images/explore_logo.png" alt="logo">
+   <div class="top-footer">
   <div class="footer-info">
-  <h1>Explore <br> Missoula</h1>
+  <div class="footer-brand">
+    <img class="footer-logo" src="images/explore_logo.png" alt="logo">
+    <h1>Explore <br> Missoula</h1>
+  </div>
   <div class="vertical-bar"></div>
   <div class="footer-details">
   <h2>Phone: 406-406-4066</h2>
@@ -252,7 +258,11 @@
   <h2>Social Handles: @exploreMissoula </h2>
   </div>
   </div>
-  <p>&copy; 2026 Explore Missoula. All rights reserved.</p>
+  </div>
+  <p>&copy; <span id="year"></span> Explore Missoula. All rights reserved.</p>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </footer>
 </div>
 
