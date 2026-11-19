@@ -1112,7 +1112,6 @@ scroll-snap-align: start;
     width: 60px;
     height: 60px;
     flex: 0 0 60px;
-
   }
 
   .event::before {
@@ -1170,5 +1169,21 @@ scroll-snap-align: start;
   .form-v2 label {
     font-size: 15px;
   }
+/*-------FOOTER----*/
+  .footer-info h1 {
+    font-size: clamp(28px, 4vw, 36px);
+  }
 
+  .footer-info h2 {
+    font-size: clamp(12px, 1.8vw, 16px);
+    line-height: 1.4;
+  }
+
+  .footer-logo {
+    width: clamp(130px, 18vw, 180px);
+  }
+
+  .footer-info {
+    gap: clamp(1.5rem, 3vw, 3rem);
+  }
 }
