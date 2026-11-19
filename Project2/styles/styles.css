@@ -708,14 +708,16 @@ min-width: 0;
   transform: translateY(-50%); */
   width: 220px;
   height: auto;
+  margin-right: -12%;
 }
 
 footer h1 {
   font-family: "Passion One", sans-serif;
   color:#fefcf9;
   font-size: 3rem;
-  text-align: left;
+  text-align: right;
   margin: 0;
+  margin-right: -5%;
 }
 
 footer h2 {
