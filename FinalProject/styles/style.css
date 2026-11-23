@@ -1,0 +1,324 @@
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------FONTS---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+
+.libre-baskerville {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fanlste";
+  src: url("../fonts/fanlste.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------BODY----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+    background-color: #ede1d1;
+    font-family: "Fanlste", serif;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------NAVBAR--------------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+.navBar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+    gap: 5rem;
+    padding: 0 3rem;
+    color: #ede1d1;
+}
+
+.navBar ul a {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.navBar ul .home-link a {
+    font-size: 3rem;
+    color: #d9401e;
+
+}
+
+.navBar ul .home-link {
+    margin-right: auto;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------HERO IMAGE----------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+.hero-image {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.735), rgba(0, 0, 0, 0.2)),
+                    url("../images/placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image .navBar a {
+    color: inherit;
+}
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------NAVBAR HR-----------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+.navBar hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------HERO STATEMENT------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+.hero-statement {
+    color: #ede1d1;
+    font-size: 2rem;
+    margin: 10rem 0 0 3rem;
+    text-align: center;
+}
+
+.hero-statement span {
+    font-size: 5rem;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------HERO TITLE----------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+.hero-title {
+    color: #ede1d1;
+    font-size: 15rem;
+    line-height: 1;
+    position: absolute;
+    left: 3rem;
+    bottom: -0.25em;
+    margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------FEATURED CONTENT----------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+.featured-title {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 2rem;
+    color: #3e1921;
+}
+
+.featured-cards img {
+    display: block;
+    width: 22rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.featured-cards p {
+    font-size: 1.5rem;
+}
+
+.featured-work {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: -2rem;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------FEATURED ARTIST-----------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+.featured-artist img {
+    display: block;
+    width: 25rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.featured-artist {
+    background-color:#3e1921;
+    padding: 5rem;
+    margin: 6rem 0;
+}
+
+.featured-artist-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    width: 100%;
+    max-width: 80rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.artist-info {
+    min-width: 0;
+    color:#ede1d1;
+    line-height: 2rem;
+
+}
+
+.artist-info h1 {
+    font-size: 5rem;
+}
+
+.artist-info h2 {
+    font-size: 3rem;
+}
+
+.artist-info p {
+    font-size: 1.5rem;
+}
+
+.artist-info button {
+    font-size:1.5rem;
+    padding: 1rem;
+    border: none 0px;
+    background-color: #a67926;
+    color:#ede1d1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.artist-info button:hover {
+    background-color: #ede1d1;
+    color:#3e1921;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------COMMISSION CONTENT--------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+.commission-title {
+    font-size: 5rem;
+    color:#3e1921;
+    text-align: center;
+}
+
+.commission-steps {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.step-cards h2 {
+    font-size: 3rem;
+    color:#d9401e;
+}
+
+.step-cards h3 {
+    font-size: 2.5rem;
+    color:#d9401e;
+}
+
+.step-cards p {
+    font-size: 1.5rem;
+}
+
+.step-cards {
+    color:#ede1d1;
+    line-height: 1rem;
+    background-color: #c7baa8;
+    padding: 3rem;
+}
+
+.commission-button {
+    display: block;
+    font-size: 1.5rem;
+    margin: 3rem auto 0;
+    padding: 1rem;
+    border: none;
+    color:#ede1d1;
+    background-color: #d9401e;
+    margin-bottom: 10rem;
+    margin-top: 4rem;
+    transition: background-color  0.3s ease, color 0.3s ease;
+}
+
+.commission-button:hover {
+    background-color:#ede1d1;
+    color:#3e1921;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------MEDIA QUERIES-------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+@media (max-width: 1024px) {
+/*------------NAVBAR------------*/
+    .navBar ul {                 
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0 1.25rem;
+    }
+
+    .navBar ul .home-link {
+        margin-right: 0;
+    }
+
+    .navBar ul .home-link a {
+        font-size: 2rem;
+    }
+
+    .navBar ul a {
+        font-size: 1rem;
+    }
+/*------------HERO STATEMENT-----------*/
+    .hero-statement {
+        font-size: 1rem;
+        line-height: 1.3;
+        margin: 4rem 1.25rem 0;
+        text-align: left;
+    }
+
+    .hero-statement span {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+/*------------HERO TITLE---------------*/
+    .hero-title {
+        font-size: clamp(3rem, 15vw, 5rem);
+        left: 1.25rem;
+        bottom: -0.25em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .featured-artist {
+        padding: 2rem 1.25rem;
+    }
+
+    .featured-artist-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .featured-artist img {
+        width: min(22rem, 100%);
+        height: auto;
+        aspect-ratio: 22 / 25;
+    }
+
+    .artist-info {
+        flex: none;
+        width: 100%;
+    }
+}
