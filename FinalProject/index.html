@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>Studio °7 | Home</title>
+  <title>Studio 7 | Home</title>
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2685.7">
 
@@ -24,35 +24,36 @@
    <div class="navBar">
     <nav>
      <ul>
-      <li class="home-link"><a href="./index.html">Studio °7</a></li>
+      <li class="home-link"><a href="./index.html">Studio 7</a></li>
       <li><a href="./shop.html">Discover Art</a></li>
       <li><a href="./artists.html">Current Artists</a></li>
-      <li><a href="./story.html">Our Story</a></li>
+ <!--     <li><a href="./story.html">Our Story</a></li> -->
      </ul>
-     <hr>
    </nav>
    </div>
    <h2 class="hero-statement"><span>Original <span style="color: #90adbf;">art</span>,
      independent <span style="color: #90adbf;">voices</span></span><br> Discover work you connect with, 
-     from artists worth knowing.</h2>
-   <h1 class="hero-title">Studio °7</h1>
+     from artists worth knowing</h2>
+   <h1 class="hero-title">Studio 7</h1>
   </header>
 
   <main>
 <!------------------------------FEATURED SECTION--------------------------->
-    <h3 class="featured-title">Featured Work</h3> 
-    <div class="featured-work">
-      <div class="featured-cards">  <!--card 1-->
-        <img src="images/placeholder.jpg" alt="placeholder">
-        <p>piece name <br> artist name</p>
-      </div>
-      <div class="featured-cards">  <!--card 2-->
-        <img src="images/placeholder.jpg" alt="placeholder">
-        <p>piece name <br> artist name</p>
-      </div>
-      <div class="featured-cards">  <!--card 3-->
-        <img src="images/placeholder.jpg" alt="placeholder">
-        <p>piece name <br> artist name</p>
+    <div class="light-background">
+      <h3 class="featured-title">Featured Work</h3> 
+      <div class="featured-work">
+        <div class="featured-cards">  <!--card 1-->
+          <img src="images/placeholder.jpg" alt="placeholder">
+          <p>piece name <br> artist name</p>
+        </div>
+        <div class="featured-cards">  <!--card 2-->
+          <img src="images/placeholder.jpg" alt="placeholder">
+          <p>piece name <br> artist name</p>
+        </div>
+        <div class="featured-cards">  <!--card 3-->
+          <img src="images/placeholder.jpg" alt="placeholder">
+          <p>piece name <br> artist name</p>
+        </div>
       </div>
     </div>
 <!--------------------------------FEATUREDD ARTIST-------------------------->
@@ -63,33 +64,104 @@
            <h1>Meet the artist</h1>
            <h2>Artist name</h2>
            <p>artist bio</p>
-           <button>Shop their work</button>
+           <button>Shop their work ↗</button>
          </div>
        </div>
     </div>
 
 <!-----------------------------------COMMISSION SECTION----------------------->
-    <h3 class="commission-title">Request a commision</h3>
-    <div class="commission-steps">
-      <div class="step-cards"> <!--step 1-->
-       <h2>#1</h2>
-       <h3>Select an artist</h3>
-       <p>put step instructions here</p>
+    <div class="light-background">
+      <h3 class="commission-title">Request a commision</h3>
+      <div class="commission-steps">
+        <div class="step-cards"> <!--step 1-->
+        <h2>#1</h2>
+        <h3>Select an artist</h3>
+        <p>put step instructions here</p>
+        </div>
+        <div class="step-cards"> <!--step 2-->
+        <h2>#2</h2>
+        <h3>Pitch your idea</h3>
+        <p>put step instructions here</p>
+        </div>
+        <div class="step-cards"> <!--step 3-->
+        <h2>#3</h2>
+        <h3>Stay in touch</h3>
+        <p>put step instructions here</p>
+        </div>
       </div>
-      <div class="step-cards"> <!--step 2-->
-       <h2>#2</h2>
-       <h3>Pitch your idea</h3>
-       <p>put step instructions here</p>
-      </div>
-      <div class="step-cards"> <!--step 3-->
-       <h2>#3</h2>
-       <h3>Stay in touch</h3>
-       <p>put step instructions here</p>
-      </div>
+      <button class="commission-button">Contact the artist now ↗</button>
     </div>
-    <button class="commission-button">Contact the artist now</button>
-  
+
+<!--------------------------------ARTIST APPLICATION---------------->
+    <div class="application-section">
+      <div class="application-title">
+       <h2>Are you an artist?</h2> 
+       <h3>Apply below to become a featured artist and  have your work showcased in studio.</h3>
+      </div>
+
+    <form class="form-v2">
+      <fieldset>
+
+
+      <div class="contact-fields">
+        <label>Name:
+          <input type="text" name="name" placeholder="Enter your name">
+        </label>
+
+        <label>Number:
+          <input type="text" name="number" placeholder="Enter your phone #">
+        </label>
+
+        <label>Email Address:
+          <input type="email" name="email" placeholder="Enter your email adress">
+        </label>
+      </div>
+
+        <label class="message-field">
+           Artist bio:
+          <textarea name="message" placeholder="Tell us about your work"></textarea>
+        </label>
+
+
+        <div class="form-actions">
+          <button type="submit">Submit</button>
+        </div>
+
+    </fieldset>
+  </form>
+  </div>
   </main>
+
+<!----------------------------------FOOTER----------------------------->
+  <footer>
+    <div class="footer-text">
+      <div class="subscription-text">
+        <h1 class="newsletter-title">Don't miss out</h1>
+        <h2 class="newsletter-detail">Sign up for our weekly newsletter<br> to hear about upcoming artists.</h2>
+        <fieldset class="newsletter-fieldset">
+          <div class="newsletter">
+            <label>Email Address:
+              <input type="text" name="name" placeholder="Enter you email address">
+            </label>
+            <div class="subscribe-button">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <h1>Studio 7</h1>
+    </div>
+    <!---     ADD LINKS TO PAGES IF TIME
+    <p>Address</p>
+    <p>Artwork</p>
+    <p>Our Artists</p>
+    <p>About Us</p>
+  -->
+    <p>&copy; <span id="year"></span> Studio 7. All rights reserved.</p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
 
 </body>
 </html>
