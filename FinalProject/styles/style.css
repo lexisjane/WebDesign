@@ -459,7 +459,7 @@ footer p {
     justify-content: center;
     gap: 8rem;
     align-items: baseline;
-    color:#130907;
+    color: #130907;
 }
 
 .search {
@@ -572,11 +572,107 @@ label {
   margin-top: 3rem;
 }
 
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------ARTISTS-------------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+.artist-statement {
+    color:#ede1d1;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/*-------arists cards----------*/
+.artist-page-featured h1,
+.artist-page-featured h2,
+.artist-page-featured p {
+    color:#130907;
+}
+
+.artist-page-featured {
+  width: calc(100% - 2rem);
+  max-width: 70rem;
+  margin-inline: auto;
+  padding: clamp(1.25rem, 5vw, 4rem);
+  box-sizing: border-box;
+}
+
+.artist-page-featured .featured-artist-content {
+  gap: 3rem;
+}
+
+.artist-page-featured .artist-info img {
+  display: block;
+  width: min(100%, 6rem);
+  height: auto;
+  margin: 1.5rem 0;
+
+}
+
+.artist-page-featured .artist-info .art-preview {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------------MEDIA QUERIES-------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+
+
+/*-------------ART GALLERY------------------*/
 @media (max-width: 1024px) {
   .art-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
   }
+
+  /*-------------ARTWORK TITLE-----------------*/
+  .shop-statement {
+    font-size: 4rem;
+    margin-top: 5rem;
+  }
+
+  /*-------------ARTWORK SEARCH-------------*/
+  .artwork-overview {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.search select {
+  max-width: 100%;
+  font-size: .5rem;
+}
+
+.art-note h3 {
+    font-size: 1.5rem;
+}
+
+.art-note p {
+  margin-top: -1.25rem;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-top: -1.25rem;
+    line-height: 1;
+}
+
+.art-note br {
+  display: none;
+}
 }
 
 @media (max-width: 600px) {
@@ -604,9 +700,6 @@ label {
   }
 }
 
-/*-----------------------------------------------------------------------------------------*/
-/*---------------------------------------MEDIA QUERIES-------------------------------------*/
-/*-----------------------------------------------------------------------------------------*/
 @media (max-width: 1024px) {
 /*------------NAVBAR------------*/
     .navBar ul {                 

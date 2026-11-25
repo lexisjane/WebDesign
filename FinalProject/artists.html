@@ -25,6 +25,92 @@
      </ul>
    </nav>
   </div>
-<p>this is artists</p>
+<!-----------------------------HERO STATEMENT---------------------------->
+  <main>
+    <h2 class="artist-statement">Meet the <em><span style="color:#90adbf;">hands</span></em>
+      <br> know their <em><span style="color:#90adbf;">voices</span></em></h2>
+  </main>
+<!-----------------------------ARTIST CARDS------------------------------>
+  <div class="light-background">
+    <div class="featured-artist artist-page-featured"> <!--PICASSO-->
+       <div class="featured-artist-content">
+         <img src="images/Picasso/Picasso_portrait.jpg" alt="Picasso">
+         <div class="artist-info">
+           <h2>Pablo Picasso</h2>
+           <p>artist bio</p> 
+           <div class="art-preview">
+            <img src="images/Picasso/Picasso1.webp" alt="Art1">
+            <img src="images/Picasso/Picasso2.jpeg" alt="Art2">
+            <img src="images/Picasso/Picasso3.jpg" alt="Art3">
+           </div>
+           <button>Shop their work ↗</button>
+         </div>
+      </div>
+    </div>
+    <div class="featured-artist artist-page-featured"> <!--VANGOGH-->
+       <div class="featured-artist-content">
+         <img src="images/VanGogh/VanGogh_portrait.jpeg" alt="VanGogh">
+         <div class="artist-info">
+           <h2>Vincent van Gogh</h2>
+           <p>artist bio</p> 
+           <div class="art-preview">
+            <img src="images/VanGogh/VanGogh1.jpg.avif" alt="Art1">
+            <img src="images/VanGogh/VanGogh2.jpeg" alt="Art2">
+            <img src="images/VanGogh/VanGogh3.jpg.webp" alt="Art3">
+           </div>
+           <button>Shop their work ↗</button>
+         </div>
+      </div>
+    </div>
+    <div class="featured-artist artist-page-featured"> <!--VINCI-->
+       <div class="featured-artist-content">
+         <img src="images/Vinci/Vinci_portrait.jpg" alt="Vinci">
+         <div class="artist-info">
+           <h2>Leonardo da Vinci</h2>
+           <p>artist bio</p> 
+           <div class="art-preview">
+            <img src="images/Vinci/Vinci1.jpg" alt="Art1">
+            <img src="images/Vinci/Vinci2.jpg" alt="Art2">
+            <img src="images/Vinci/Vinci3.jpg.webp" alt="Art3">
+           </div>
+           <button>Shop their work ↗</button>
+         </div>
+      </div>
+    </div>
+  </div>
+
+<!----------------------------------FOOTER----------------------------->
+  <footer>
+    <div class="footer-text">
+      <div class="subscription-text">
+        <h1 class="newsletter-title">Don't miss out</h1>
+        <h2 class="newsletter-detail">Sign up for our weekly newsletter<br> to hear about upcoming artists.</h2>
+        <fieldset class="newsletter-fieldset">
+          <div class="newsletter">
+            <label>Email Address:
+              <input type="text" name="name" placeholder="Enter you email address">
+            </label>
+            <div class="subscribe-button">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <h1>Studio 7</h1>
+    </div>
+    <!---     ADD LINKS TO PAGES IF TIME
+    <p>Address</p>
+    <p>Artwork</p>
+    <p>Our Artists</p>
+    <p>About Us</p>
+  -->
+    <p>&copy; <span id="year"></span> Studio 7. All rights reserved.</p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</main>
+
+
 </body>
 </html>
